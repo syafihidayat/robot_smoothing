@@ -1,0 +1,11 @@
+[0.033s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg -- -j16 -l16
+[0.097s] [35m[1mConsolidate compiler generated dependencies of target robot_waypoint[0m
+[0.134s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o[0m
+[0.401s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/Bool.hpp: No such file or directory
+[0.401s]     3 | #include [01;31m[K<std_msgs/msg/Bool.hpp>[m[K
+[0.401s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.401s] compilation terminated.
+[0.405s] gmake[2]: *** [CMakeFiles/robot_waypoint.dir/build.make:76: CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o] Error 1
+[0.406s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_waypoint.dir/all] Error 2
+[0.407s] gmake: *** [Makefile:146: all] Error 2
+[0.412s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg -- -j16 -l16

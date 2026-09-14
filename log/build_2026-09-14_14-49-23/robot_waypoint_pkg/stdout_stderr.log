@@ -1,0 +1,433 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o[0m
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+/usr/include/c++/11/tuple: In instantiation of ‘[01m[Kstruct std::tuple_element<0, std::tuple<> >[m[K’:
+[01m[K/usr/include/c++/11/tuple:1353:12:[m[K   recursively required from ‘[01m[Kstruct std::tuple_element<2, std::tuple<double, double> >[m[K’
+[01m[K/usr/include/c++/11/tuple:1353:12:[m[K   required from ‘[01m[Kstruct std::tuple_element<3, std::tuple<double, double, double> >[m[K’
+[01m[K/usr/include/c++/11/utility:118:11:[m[K   required by substitution of ‘[01m[Ktemplate<long unsigned int __i, class _Tp> using __tuple_element_t = typename std::tuple_element::type [with long unsigned int __i = 3; _Tp = std::tuple<double, double, double>][m[K’
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K   required by substitution of ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&) [with long unsigned int __i = 3; _Elements = {double, double, double}][m[K’
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K   required from here
+[01m[K/usr/include/c++/11/tuple:1371:25:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: tuple index must be in range
+ 1371 |       static_assert([01;31m[K__i < tuple_size<tuple<>>::value[m[K,
+      |                     [01;31m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/tuple:1371:25:[m[K [01;36m[Knote: [m[K‘[01m[K(0 < ((long unsigned int)std::integral_constant<long unsigned int, 0>::value))[m[K’ evaluates to false
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:[m[K In member function ‘[01m[Kvoid waypointPublish::send_waypoint()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget<3>(__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(std::pair<_Tp1, _Tp2>&)[m[K’
+  223 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:223:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(std::pair<_Tp1, _Tp2>&&)[m[K’
+  228 |     [01;36m[Kget[m[K(pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:228:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kstd::pair<_Tp1, _Tp2>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(const std::pair<_Tp1, _Tp2>&)[m[K’
+  233 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:233:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(const std::pair<_Tp1, _Tp2>&&)[m[K’
+  238 |     [01;36m[Kget[m[K(const pair<_Tp1, _Tp2>&& __in) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kconst std::pair<_Tp1, _Tp2>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+  247 |     [01;36m[Kget[m[K(pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:247:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+  252 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:252:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+  257 |     [01;36m[Kget[m[K(pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:257:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+  262 |     [01;36m[Kget[m[K(const pair<_Tp, _Up>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:262:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+  267 |     [01;36m[Kget[m[K(pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:267:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+  272 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:272:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+  277 |     [01;36m[Kget[m[K(pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:277:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+  282 |     [01;36m[Kget[m[K(const pair<_Up, _Tp>&& __p) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/utility:282:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp& std::get(std::array<_Tp, _Nm>&)[m[K’
+  361 |     [01;36m[Kget[m[K(array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp&& std::get(std::array<_Tp, _Nm>&&)[m[K’
+  369 |     [01;36m[Kget[m[K(array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:369:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kstd::array<_Tp, _Nm>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp& std::get(const std::array<_Tp, _Nm>&)[m[K’
+  377 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:377:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp&& std::get(const std::array<_Tp, _Nm>&&)[m[K’
+  385 |     [01;36m[Kget[m[K(const array<_Tp, _Nm>&& __arr) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/array:385:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1393 |     [01;36m[Kget[m[K(tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:36[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+/usr/include/c++/11/utility: In substitution of ‘[01m[Ktemplate<long unsigned int __i, class _Tp> using __tuple_element_t = typename std::tuple_element::type [with long unsigned int __i = 3; _Tp = std::tuple<double, double, double>][m[K’:
+[01m[K/usr/include/c++/11/tuple:1393:5:[m[K   required by substitution of ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&) [with long unsigned int __i = 3; _Elements = {double, double, double}][m[K’
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K   required from here
+[01m[K/usr/include/c++/11/utility:118:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::tuple_element<3, std::tuple<double, double, double> >[m[K’
+  118 |     using [01;31m[K__tuple_element_t[m[K = typename tuple_element<__i, _Tp>::type;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1399 |     [01;36m[Kget[m[K(const tuple<_Elements...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1399:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1405 |     [01;36m[Kget[m[K(tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1405:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1414 |     [01;36m[Kget[m[K(const tuple<_Elements...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1414:5:[m[K [01;36m[Knote: [m[K  substitution of deduced template arguments resulted in errors seen above
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+ 1449 |     [01;36m[Kget[m[K(tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1449:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+ 1460 |     [01;36m[Kget[m[K(tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1460:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+ 1471 |     [01;36m[Kget[m[K(const tuple<_Types...>& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1471:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/usr/include/c++/11/bits/unique_ptr.h:37[m[K,
+                 from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+ 1483 |     [01;36m[Kget[m[K(const tuple<_Types...>&& __t) noexcept
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/tuple:1483:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(std::variant<_Types ...>&)[m[K’
+ 1676 |     [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1676:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1687 |     [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1687:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kstd::variant<_Types ...>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(const std::variant<_Types ...>&)[m[K’
+ 1698 |     [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1698:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1709 |     [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1709:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type[m[K’ {aka ‘[01m[Kstd::tuple<double, double, double>[m[K’} is not derived from ‘[01m[Kconst std::variant<_Types ...>[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;36m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;36m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+ 1117 |     constexpr _Tp& [01;36m[Kget[m[K(variant<_Types...>& __v)
+      |                    [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1117:20:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+ 1126 |     constexpr _Tp&& [01;36m[Kget[m[K(variant<_Types...>&& __v)
+      |                     [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1126:21:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+ 1136 |     constexpr const _Tp& [01;36m[Kget[m[K(const variant<_Types...>& __v)
+      |                          [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1136:26:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+ 1145 |     constexpr const _Tp&& [01;36m[Kget[m[K(const variant<_Types...>&& __v)
+      |                           [01;36m[K^~~[m[K
+[01m[K/usr/include/c++/11/variant:1145:27:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)[m[K’
+   98 |     speed_msg.data = static_cast<float>([01;31m[Kstd::get<3>(waypoint[current_waypoint_index])[m[K);
+      |                                         [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:[m[K [01;36m[Knote: [m[K  expected a type, got ‘[01m[K3[m[K’

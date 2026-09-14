@@ -1,0 +1,87 @@
+[0.291s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[0.355s] [35m[1mConsolidate compiler generated dependencies of target robot_main[0m
+[0.376s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_main.dir/src/robot_main.cpp.o[0m
+[0.942s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:22:25:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.942s]    22 | class Movement : public [01;31m[Krclcpp[m[K::Node
+[0.942s]       |                         [01;31m[K^~~~~~[m[K
+[0.942s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:22:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNode[m[K’
+[0.943s]    22 | class Movement : public rclcpp::[01;31m[KNode[m[K
+[0.943s]       |                                 [01;31m[K^~~~[m[K
+[0.943s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:25:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+[0.943s]    25 | [01;31m[Kpublic[m[K:
+[0.943s]       | [01;31m[K^~~~~~[m[K
+[0.943s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:25:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kpublic[m[K’
+[0.943s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:23:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[0.944s]    23 | [01;36m[K{[m[K
+[0.944s]       | [01;36m[K^[m[K
+[0.944s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:77:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+[0.944s]    77 | [01;31m[Kprivate[m[K:
+[0.944s]       | [01;31m[K^~~~~~~[m[K
+[0.944s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:100:3:[m[K [01;31m[Kerror: [m[K‘[01m[KState[m[K’ does not name a type
+[0.944s]   100 |   [01;31m[KState[m[K current_state;
+[0.944s]       |   [01;31m[K^~~~~[m[K
+[0.949s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In function ‘[01m[Kvoid odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.949s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:139:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_robot_msg[m[K’ was not declared in this scope
+[0.949s]   139 |     [01;31m[Kodom_robot_msg[m[K = *msg;
+[0.949s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.954s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In function ‘[01m[Kvoid pose_callback(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.954s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:153:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state[m[K’ was not declared in this scope
+[0.954s]   153 |     if([01;31m[Kcurrent_state[m[K == WAITING_FOR_TARGET || current_state == TARGET_REACHED)
+[0.954s]       |        [01;31m[K^~~~~~~~~~~~~[m[K
+[0.957s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:153:25:[m[K [01;31m[Kerror: [m[K‘[01m[KWAITING_FOR_TARGET[m[K’ was not declared in this scope
+[0.957s]   153 |     if(current_state == [01;31m[KWAITING_FOR_TARGET[m[K || current_state == TARGET_REACHED)
+[0.957s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.960s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:153:64:[m[K [01;31m[Kerror: [m[K‘[01m[KTARGET_REACHED[m[K’ was not declared in this scope
+[0.960s]   153 |  if(current_state == WAITING_FOR_TARGET || current_state == [01;31m[KTARGET_REACHED[m[K)
+[0.960s]       |                                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.960s] 
+[0.963s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:158:23:[m[K [01;31m[Kerror: [m[K‘[01m[KMOVING_TO_TARGET[m[K’ was not declared in this scope
+[0.964s]   158 |       current_state = [01;31m[KMOVING_TO_TARGET[m[K;
+[0.964s]       |                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.965s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:160:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.966s]   160 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "New target STAGE1 received: (%.2f, %.2f)", targetX, targetY);
+[0.966s]       |                   [01;31m[K^~~~[m[K
+[0.966s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:160:7:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+[0.967s]   160 |       [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "New target STAGE1 received: (%.2f, %.2f)", targetX, targetY);
+[0.967s]       |       [01;31m[K^~~~~~~~~~~[m[K
+[0.967s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:161:19:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[0.967s]   161 |       RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Current position: (%.2f, %.2f)", currentX, currentY);
+[0.967s]       |                   [01;31m[K^~~~[m[K
+[0.967s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K At global scope:
+[0.967s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:268:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[0.967s]   268 | [01;31m[K}[m[K;
+[0.967s]       | [01;31m[K^[m[K
+[0.967s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.967s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:272:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.968s]   272 |   [01;31m[Krclcpp[m[K::init(argc, argv);
+[0.968s]       |   [01;31m[K^~~~~~[m[K
+[0.968s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:273:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.968s]   273 |   [01;31m[Krclcpp[m[K::spin(std::make_shared<Movement>());
+[0.968s]       |   [01;31m[K^~~~~~[m[K
+[0.968s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:274:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[0.968s]   274 |   [01;31m[Krclcpp[m[K::shutdown();
+[0.969s]       |   [01;31m[K^~~~~~[m[K
+[1.041s] In file included from [01m[K/usr/include/c++/11/unordered_map:42[m[K,
+[1.041s]                  from [01m[K/usr/include/c++/11/functional:61[m[K,
+[1.042s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[1.042s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[1.042s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:8[m[K,
+[1.042s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+[1.042s]                  from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:2[m[K:
+[1.042s] /usr/include/c++/11/ext/aligned_buffer.h: In instantiation of ‘[01m[Kstruct __gnu_cxx::__aligned_buffer<Movement>[m[K’:
+[1.043s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:506:35:[m[K   required from ‘[01m[Kclass std::_Sp_counted_ptr_inplace<Movement, std::allocator<Movement>, __gnu_cxx::_S_atomic>::_Impl[m[K’
+[1.043s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:567:13:[m[K   required from ‘[01m[Kclass std::_Sp_counted_ptr_inplace<Movement, std::allocator<Movement>, __gnu_cxx::_S_atomic>[m[K’
+[1.043s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:647:43:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = Movement; _Alloc = std::allocator<Movement>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.043s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Movement>; _Args = {}; _Tp = Movement; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.043s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<Movement>; _Args = {}; _Tp = Movement][m[K’
+[1.043s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = Movement; _Alloc = std::allocator<Movement>; _Args = {}][m[K’
+[1.043s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = Movement; _Args = {}][m[K’
+[1.043s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:273:42:[m[K   required from here
+[1.043s] [01m[K/usr/include/c++/11/ext/aligned_buffer.h:91:28:[m[K [01;31m[Kerror: [m[Kinvalid application of ‘[01m[Ksizeof[m[K’ to incomplete type ‘[01m[KMovement[m[K’
+[1.043s]    91 |     : std::aligned_storage<[01;31m[Ksizeof(_Tp)[m[K, __alignof__(_Tp)>
+[1.043s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[1.043s] [01m[K/usr/include/c++/11/ext/aligned_buffer.h:91:28:[m[K [01;31m[Kerror: [m[Kinvalid application of ‘[01m[Ksizeof[m[K’ to incomplete type ‘[01m[KMovement[m[K’
+[1.064s] gmake[2]: *** [CMakeFiles/robot_main.dir/build.make:76: CMakeFiles/robot_main.dir/src/robot_main.cpp.o] Error 1
+[1.065s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_main.dir/all] Error 2
+[1.065s] gmake: *** [Makefile:146: all] Error 2
+[1.069s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16

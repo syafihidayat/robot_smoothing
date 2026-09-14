@@ -1,0 +1,150 @@
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:114:44:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+  114 |   void start_callback(const std_msgs::msg::[01;31m[KBool[m[K::SharedPtr msg)
+      |                                            [01;31m[K^~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:114:60:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  114 |   void start_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                            [01;31m[K^~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:114:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  114 |   void start_callback[34m[K([m[Kconst std_msgs::msg::Bool::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                      [34m[K~[m[K                                    [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                           [32m[K)[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:114:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  114 |   void start_callback(const std_msgs::msg::Bool::[01;31m[KSharedPtr[m[K msg)
+      |                                                  [01;31m[K^~~~~~~~~[m[K
+      |                                                           [32m[K;[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:114:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  114 |   void start_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                            [01;31m[K^~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:129:46:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+  129 |   void reached_callback(const std_msgs::msg::[01;31m[KBool[m[K::SharedPtr msg)
+      |                                              [01;31m[K^~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:129:62:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  129 |   void reached_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                              [01;31m[K^~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:129:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  129 |   void reached_callback[34m[K([m[Kconst std_msgs::msg::Bool::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                        [34m[K~[m[K                                    [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                             [32m[K)[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:129:52:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  129 |   void reached_callback(const std_msgs::msg::Bool::[01;31m[KSharedPtr[m[K msg)
+      |                                                    [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[K;[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:129:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  129 |   void reached_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                              [01;31m[K^~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:39:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+  153 |   rclcpp::Subscription<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr reached_sub;
+      |                                       [01;31m[K^~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  153 |   rclcpp::Subscription<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr reached_sub;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  153 |   rclcpp::Subscription<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K reached_sub;
+      |                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                       [32m[K;[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kreached_sub[m[K’ does not name a type
+  153 |   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr [01;31m[Kreached_sub[m[K;
+      |                                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:39:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+  155 |   rclcpp::Subscription<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr buttonStage2_sub;
+      |                                       [01;31m[K^~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  155 |   rclcpp::Subscription<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr buttonStage2_sub;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  155 |   rclcpp::Subscription<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K buttonStage2_sub;
+      |                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                       [32m[K;[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:46:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint waypointPublish::SharedPtr[m[K’
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:46:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint waypointPublish::SharedPtr[m[K’
+  153 |   rclcpp::Subscription<std_msgs::msg::Bool>::[01;36m[KSharedPtr[m[K reached_sub;
+      |                                              [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:155:56:[m[K [01;31m[Kerror: [m[K‘[01m[KbuttonStage2_sub[m[K’ does not name a type
+  155 |   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr [01;31m[KbuttonStage2_sub[m[K;
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:39:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+  156 |   rclcpp::Subscription<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr start_sub;
+      |                                       [01;31m[K^~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  156 |   rclcpp::Subscription<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr start_sub;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  156 |   rclcpp::Subscription<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K start_sub;
+      |                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                       [32m[K;[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:46:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint waypointPublish::SharedPtr[m[K’
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:153:46:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint waypointPublish::SharedPtr[m[K’
+  153 |   rclcpp::Subscription<std_msgs::msg::Bool>::[01;36m[KSharedPtr[m[K reached_sub;
+      |                                              [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:156:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_sub[m[K’ does not name a type
+  156 |   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr [01;31m[Kstart_sub[m[K;
+      |                                                        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:[m[K In constructor ‘[01m[KwaypointPublish::waypointPublish()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kreached_sub[m[K’ was not declared in this scope
+   18 |     [01;31m[Kreached_sub[m[K = this->create_subscription<std_msgs::msg::Bool>(
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:18:60:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   18 |     reached_sub = this->create_subscription<std_msgs::msg::[01;31m[KBool[m[K>(
+      |                                                            [01;31m[K^~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:18:65:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KwaypointPublish::create_subscription<<expression error> >(const char [16], int, std::_Bind_helper<false, void (waypointPublish::*)(...), waypointPublish*, const std::_Placeholder<1>&>::type)[m[K’
+   18 |     reached_sub = [01;31m[Kthis->create_subscription<std_msgs::msg::Bool>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   19 | [01;31m[K        "/target_reached", 10,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+   20 | [01;31m[K        std::bind(&waypointPublish::reached_callback, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:18:65:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   18 |     reached_sub = [01;31m[Kthis->create_subscription<std_msgs::msg::Bool>([m[K
+      |                   [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   19 | [01;31m[K        "/target_reached", 10,[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+   20 | [01;31m[K        std::bind(&waypointPublish::reached_callback, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_sub[m[K’ was not declared in this scope
+   22 |     [01;31m[Kstart_sub[m[K = this->create_subscription<std_msgs::msg::Bool>("robot_start", 10,
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:22:58:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   22 |     start_sub = this->create_subscription<std_msgs::msg::[01;31m[KBool[m[K>("robot_start", 10,
+      |                                                          [01;31m[K^~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:22:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KwaypointPublish::create_subscription<<expression error> >(const char [12], int, std::_Bind_helper<false, void (waypointPublish::*)(...), waypointPublish*, const std::_Placeholder<1>&>::type)[m[K’
+   22 |   start_sub = [01;31m[Kthis->create_subscription<std_msgs::msg::Bool>("robot_start", 10,[m[K
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+
+   23 | [01;31m[K                                                              std::bind(&waypointPublish::start_callback, this, std::placeholders::_1))[m[K;
+      |                                                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:22:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |   start_sub = [01;31m[Kthis->create_subscription<std_msgs::msg::Bool>("robot_start", 10,[m[K
+      |               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+
+   23 | [01;31m[K                                                              std::bind(&waypointPublish::start_callback, this, std::placeholders::_1))[m[K;
+      |                                                               [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/robot_waypoint.dir/build.make:76: CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_waypoint.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

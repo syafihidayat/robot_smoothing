@@ -1,0 +1,36 @@
+[0.031s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/lbringup -- -j16 -l16
+[0.307s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/lbringup -- -j16 -l16
+[0.320s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/lbringup
+[0.331s] -- Install configuration: ""
+[0.331s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch
+[0.331s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/lasers.launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/default_robot.launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/depth.launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/extra_launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/custom_robot.launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/sensors.launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/bringup.launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/joy_teleop.launch.py
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/twist_mux.yaml
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/zed_common.yaml
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/box_laser_filter.yaml
+[0.332s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/fake_laser.yaml
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/ekf.yaml
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/joy.yaml
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/ament_index/resource_index/package_run_dependencies/lbringup
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/ament_index/resource_index/parent_prefix_path/lbringup
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/ament_prefix_path.sh
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/ament_prefix_path.dsv
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/path.sh
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/path.dsv
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.bash
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.sh
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.zsh
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.dsv
+[0.333s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.dsv
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/ament_index/resource_index/packages/lbringup
+[0.333s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/cmake/lbringupConfig.cmake
+[0.334s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/cmake/lbringupConfig-version.cmake
+[0.334s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.xml
+[0.336s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/lbringup

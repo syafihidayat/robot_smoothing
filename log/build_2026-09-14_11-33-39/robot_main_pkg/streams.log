@@ -1,0 +1,47 @@
+[0.283s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[0.343s] [35m[1mConsolidate compiler generated dependencies of target robot_main[0m
+[0.372s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_main.dir/src/robot_main.cpp.o[0m
+[2.538s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::control_loop()[m[K’:
+[2.538s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:172:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.538s]   172 |     [01;35m[Kif[m[K((current_state == WAITING_FOR_TARGET || current_state == MOVING_TO_TARGET) && !target_received)
+[2.538s]       |     [01;35m[K^~[m[K
+[2.538s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:175:7:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[2.538s]   175 |       [01;36m[Kdouble[m[K currT = this->now().seconds();
+[2.538s]       |       [01;36m[K^~~~~~[m[K
+[2.540s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:248:14:[m[K [01;31m[Kerror: [m[Kjump to case label
+[2.540s]   248 |         case [01;31m[KTARGET_REACHED[m[K:
+[2.540s]       |              [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.540s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:207:15:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kfloat control_angle[m[K’
+[2.540s]   207 |         float [01;36m[Kcontrol_angle[m[K = omni_angular.control_base_rotation(theta, max_angular_vel);
+[2.540s]       |               [01;36m[K^~~~~~~~~~~~~[m[K
+[2.540s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:206:15:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kfloat control_distance[m[K’
+[2.540s]   206 |         float [01;36m[Kcontrol_distance[m[K = omni_distance.control_base(distance, desired_linear_vel);
+[2.540s]       |               [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.540s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:204:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble angle[m[K’
+[2.540s]   204 |         double [01;36m[Kangle[m[K = std::atan2(dy, dx);
+[2.540s]       |                [01;36m[K^~~~~[m[K
+[2.540s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:203:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble distance[m[K’
+[2.540s]   203 |         double [01;36m[Kdistance[m[K = std::sqrt(dx * dx + dy * dy);
+[2.540s]       |                [01;36m[K^~~~~~~~[m[K
+[2.541s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:201:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble theta[m[K’
+[2.541s]   201 |         double [01;36m[Ktheta[m[K = 0 - odom_robot_yaw;
+[2.541s]       |                [01;36m[K^~~~~[m[K
+[2.541s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:200:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble odom_robot_yaw[m[K’
+[2.541s]   200 |         double [01;36m[Kodom_robot_yaw[m[K = convertion(odom_robot_msg);
+[2.541s]       |                [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.541s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:198:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble dy[m[K’
+[2.541s]   198 |         double [01;36m[Kdy[m[K = targetY - currentY;
+[2.541s]       |                [01;36m[K^~[m[K
+[2.541s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:197:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble dx[m[K’
+[2.541s]   197 |         double [01;36m[Kdx[m[K = targetX - currentX;
+[2.541s]       |                [01;36m[K^~[m[K
+[2.541s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:180:13:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KTARGET_REACHED[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+[2.541s]   180 |       switch[01;35m[K([m[Kcurrent_state)
+[2.541s]       |             [01;35m[K^[m[K
+[2.541s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:176:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KdeltaT[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.541s]   176 |       float [01;35m[KdeltaT[m[K = currT - prevT;
+[2.542s]       |             [01;35m[K^~~~~~[m[K
+[5.385s] gmake[2]: *** [CMakeFiles/robot_main.dir/build.make:76: CMakeFiles/robot_main.dir/src/robot_main.cpp.o] Error 1
+[5.385s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_main.dir/all] Error 2
+[5.386s] gmake: *** [Makefile:146: all] Error 2
+[5.390s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16

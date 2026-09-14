@@ -1,0 +1,7 @@
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kpid.hpp: No such file or directory
+   12 | #include [01;31m[K<pid.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/robot_main.dir/build.make:76: CMakeFiles/robot_main.dir/src/robot_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,25 @@
+[0.031s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg -- -j16 -l16
+[0.122s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o[0m
+[9.794s] [100%] [32m[1mLinking CXX executable robot_waypoint[0m
+[10.717s] [100%] Built target robot_waypoint
+[10.732s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg -- -j16 -l16
+[10.734s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg
+[10.741s] -- Install configuration: ""
+[10.741s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/robot_waypoint_pkg/robot_waypoint
+[10.751s] -- Set runtime path of "/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/robot_waypoint_pkg/robot_waypoint" to ""
+[10.751s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/package_run_dependencies/robot_waypoint_pkg
+[10.752s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/parent_prefix_path/robot_waypoint_pkg
+[10.752s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/ament_prefix_path.sh
+[10.752s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/ament_prefix_path.dsv
+[10.752s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/path.sh
+[10.752s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/path.dsv
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.bash
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.sh
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.zsh
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.dsv
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.dsv
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/packages/robot_waypoint_pkg
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/cmake/robot_waypoint_pkgConfig.cmake
+[10.753s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/cmake/robot_waypoint_pkgConfig-version.cmake
+[10.754s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.xml
+[10.758s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg

@@ -1,0 +1,16 @@
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib/purpuresuit_pkg/purpuresuit
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/ament_index/resource_index/package_run_dependencies/purpuresuit_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/ament_index/resource_index/parent_prefix_path/purpuresuit_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/ament_prefix_path.sh
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/ament_prefix_path.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/path.sh
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/path.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.bash
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.sh
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.zsh
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/ament_index/resource_index/packages/purpuresuit_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/cmake/purpuresuit_pkgConfig.cmake
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/cmake/purpuresuit_pkgConfig-version.cmake
+/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.xml

@@ -1,0 +1,21 @@
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In constructor ‘[01m[KMovement::Movement()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:70:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_angular_Vel[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_linear_Vel[m[K’?
+   70 |     this->get_parameter("desired_angular_Vel", [01;31m[Kdesired_angular_Vel[m[K);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Kdesired_linear_Vel[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::control_loop()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:172:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  172 |     [01;35m[Kif[m[K((current_state == WAITING_FOR_TARGET || current_state == MOVING_TO_TARGET) && !target_received)
+      |     [01;35m[K^~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:175:7:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  175 |       [01;36m[Kdouble[m[K currT = this->now().seconds();
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:247:7:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+  247 |       [01;35m[K}[m[K
+      |       [01;35m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:249:7:[m[K [01;36m[Knote: [m[Khere
+  249 |       [01;36m[Kcase[m[K TARGET_REACHED:
+      |       [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/robot_main.dir/build.make:76: CMakeFiles/robot_main.dir/src/robot_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

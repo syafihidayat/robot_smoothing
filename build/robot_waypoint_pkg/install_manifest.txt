@@ -1,0 +1,16 @@
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/robot_waypoint_pkg/robot_waypoint
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/package_run_dependencies/robot_waypoint_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/parent_prefix_path/robot_waypoint_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/ament_prefix_path.sh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/ament_prefix_path.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/path.sh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/path.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.bash
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.sh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.zsh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/packages/robot_waypoint_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/cmake/robot_waypoint_pkgConfig.cmake
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/cmake/robot_waypoint_pkgConfig-version.cmake
+/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.xml

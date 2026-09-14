@@ -1,0 +1,92 @@
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:276:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  276 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:24:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   24 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In constructor ‘[01m[KMovement::Movement()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:29:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub[m[K’ was not declared in this scope
+   29 |     [01;31m[Kcmd_pub[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/omni_cont/cmd_vel", 10);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kreached_pub[m[K’ was not declared in this scope
+   31 |     [01;31m[Kreached_pub[m[K = this->create_publisher<std_msgs::msg::Bool>("/target_reached", 10);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub[m[K’ was not declared in this scope
+   33 |     [01;31m[Kodom_sub[m[K = this->create_subscription<nav_msgs::msg::Odometry>("/odom", 10,
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_sub[m[K’ was not declared in this scope
+   36 |     [01;31m[Kpose_sub[m[K = this->create_subscription<geometry_msgs::msg::Point>("/pose", 10,
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   40 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(std::chrono::milliseconds(60), std::bind(&Movement::control_loop, this));
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:70:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_angular_Vel[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_linear_Vel[m[K’?
+   70 |     this->get_parameter("desired_angular_Vel", [01;31m[Kdesired_angular_Vel[m[K);
+      |                                                [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                [32m[Kdesired_linear_Vel[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:140:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_robot_msg[m[K’ was not declared in this scope
+  140 |     [01;31m[Kodom_robot_msg[m[K = *msg;
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::control_loop()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:172:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  172 |     [01;35m[Kif[m[K((current_state == WAITING_FOR_TARGET || current_state == MOVING_TO_TARGET) && !target_received)
+      |     [01;35m[K^~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:175:7:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  175 |       [01;36m[Kdouble[m[K currT = this->now().seconds();
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:178:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs_msg[m[K’ has not been declared
+  178 |       [01;31m[Kgeometry_msgs_msg[m[K::Twist cmd;
+      |       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:183:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd[m[K’ was not declared in this scope
+  183 |         [01;31m[Kcmd[m[K.linear.x = 0.0;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:200:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_robot_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom_robot_yaw[m[K’?
+  200 |         double odom_robot_yaw = convertion([01;31m[Kodom_robot_msg[m[K);
+      |                                            [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                                            [32m[Kodom_robot_yaw[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:230:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kreached_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kreached_msg[m[K’?
+  230 |           [01;31m[Kreached_pub[m[K->publish(reached_msg);
+      |           [01;31m[K^~~~~~~~~~~[m[K
+      |           [32m[Kreached_msg[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:248:14:[m[K [01;31m[Kerror: [m[Kjump to case label
+  248 |         case [01;31m[KTARGET_REACHED[m[K:
+      |              [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:207:15:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kfloat control_angle[m[K’
+  207 |         float [01;36m[Kcontrol_angle[m[K = omni_angular.control_base_rotation(theta, deltaT);
+      |               [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:206:15:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kfloat control_distance[m[K’
+  206 |         float [01;36m[Kcontrol_distance[m[K = omni_distance.control_base(distance, deltaT);
+      |               [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:204:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble angle[m[K’
+  204 |         double [01;36m[Kangle[m[K = std::atan2(dy, dx);
+      |                [01;36m[K^~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:203:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble distance[m[K’
+  203 |         double [01;36m[Kdistance[m[K = std::sqrt(dx * dx + dy * dy);
+      |                [01;36m[K^~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:201:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble theta[m[K’
+  201 |         double [01;36m[Ktheta[m[K = 0 - odom_robot_yaw;
+      |                [01;36m[K^~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:200:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble odom_robot_yaw[m[K’
+  200 |         double [01;36m[Kodom_robot_yaw[m[K = convertion(odom_robot_msg);
+      |                [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:198:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble dy[m[K’
+  198 |         double [01;36m[Kdy[m[K = targetY - currentY;
+      |                [01;36m[K^~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:197:16:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kdouble dx[m[K’
+  197 |         double [01;36m[Kdx[m[K = targetX - currentX;
+      |                [01;36m[K^~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:257:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub[m[K’ was not declared in this scope
+  257 |         [01;31m[Kcmd_pub[m[K->publish(cmd);
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:180:13:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KTARGET_REACHED[m[K’ not handled in switch [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-Wswitch]8;;[m[K]
+  180 |       switch[01;35m[K([m[Kcurrent_state)
+      |             [01;35m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K At global scope:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:276:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  276 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/robot_main.dir/build.make:76: CMakeFiles/robot_main.dir/src/robot_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_main.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

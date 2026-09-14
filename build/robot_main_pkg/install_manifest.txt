@@ -1,0 +1,16 @@
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/robot_main_pkg/robot_main
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/package_run_dependencies/robot_main_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/parent_prefix_path/robot_main_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.sh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.sh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.bash
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.sh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.zsh
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.dsv
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/packages/robot_main_pkg
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig.cmake
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig-version.cmake
+/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.xml

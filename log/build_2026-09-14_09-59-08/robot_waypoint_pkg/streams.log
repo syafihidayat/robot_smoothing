@@ -1,0 +1,4 @@
+[0.358s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg -- -j16 -l16
+[0.473s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o[0m
+[10.466s] [100%] [32m[1mLinking CXX executable robot_waypoint[0m
+[11.305s] [100%] Built target robot_waypoint

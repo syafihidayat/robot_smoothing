@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target robot_main[0m
+[100%] Built target robot_main
+-- Install configuration: ""
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/robot_main_pkg/robot_main
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/package_run_dependencies/robot_main_pkg
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/parent_prefix_path/robot_main_pkg
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.sh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.bash
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.sh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.zsh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/packages/robot_main_pkg
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig.cmake
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig-version.cmake
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.xml

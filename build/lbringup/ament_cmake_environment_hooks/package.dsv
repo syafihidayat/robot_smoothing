@@ -1,0 +1,4 @@
+source;share/lbringup/local_setup.bash
+source;share/lbringup/local_setup.dsv
+source;share/lbringup/local_setup.sh
+source;share/lbringup/local_setup.zsh

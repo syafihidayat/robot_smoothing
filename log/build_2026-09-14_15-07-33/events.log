@@ -1,0 +1,501 @@
+[0.000000] (-) TimerEvent: {}
+[0.000162] (-) JobUnselected: {'identifier': 'lbringup'}
+[0.000359] (-) JobUnselected: {'identifier': 'purpuresuit_pkg'}
+[0.000421] (-) JobUnselected: {'identifier': 'robot_gui_pkg'}
+[0.000450] (-) JobUnselected: {'identifier': 'robot_main_pkg'}
+[0.000471] (robot_waypoint_pkg) JobQueued: {'identifier': 'robot_waypoint_pkg', 'dependencies': OrderedDict()}
+[0.000490] (robot_waypoint_pkg) JobStarted: {'identifier': 'robot_waypoint_pkg'}
+[0.011916] (robot_waypoint_pkg) JobProgress: {'identifier': 'robot_waypoint_pkg', 'progress': 'cmake'}
+[0.013228] (robot_waypoint_pkg) JobProgress: {'identifier': 'robot_waypoint_pkg', 'progress': 'build'}
+[0.013994] (robot_waypoint_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg', '--', '-j16', '-l16'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2198'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2170,unix/syafihidayat:/tmp/.ICE-unix/2170'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/055f1dd3_b7f4_40a1_b30b_991cb4bad31b'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.136'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099268] (-) TimerEvent: {}
+[0.143112] (robot_waypoint_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o\x1b[0m\n'}
+[0.199369] (-) TimerEvent: {}
+[0.299703] (-) TimerEvent: {}
+[0.400089] (-) TimerEvent: {}
+[0.500480] (-) TimerEvent: {}
+[0.600925] (-) TimerEvent: {}
+[0.701324] (-) TimerEvent: {}
+[0.801777] (-) TimerEvent: {}
+[0.902242] (-) TimerEvent: {}
+[1.002706] (-) TimerEvent: {}
+[1.103169] (-) TimerEvent: {}
+[1.203785] (-) TimerEvent: {}
+[1.304257] (-) TimerEvent: {}
+[1.404779] (-) TimerEvent: {}
+[1.505242] (-) TimerEvent: {}
+[1.605732] (-) TimerEvent: {}
+[1.706189] (-) TimerEvent: {}
+[1.806655] (-) TimerEvent: {}
+[1.907109] (-) TimerEvent: {}
+[2.007653] (-) TimerEvent: {}
+[2.108084] (-) TimerEvent: {}
+[2.208541] (-) TimerEvent: {}
+[2.308990] (-) TimerEvent: {}
+[2.388465] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.389563] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.390330] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.390459] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.390543] (robot_waypoint_pkg) StderrLine: {'line': b'/usr/include/c++/11/tuple: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstruct std::tuple_element<0, std::tuple<> >\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.390622] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1353:12:\x1b[m\x1b[K   recursively required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::tuple_element<2, std::tuple<double, double> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.390698] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1353:12:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstruct std::tuple_element<3, std::tuple<double, double, double> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.390787] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:118:11:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class _Tp> using __tuple_element_t = typename std::tuple_element::type [with long unsigned int __i = 3; _Tp = std::tuple<double, double, double>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.390865] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1414:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&) [with long unsigned int __i = 3; _Elements = {double, double, double}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.390944] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K   required from here\n'}
+[2.391020] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1371:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: tuple index must be in range\n'}
+[2.391097] (robot_waypoint_pkg) StderrLine: {'line': b' 1371 |       static_assert(\x1b[01;31m\x1b[K__i < tuple_size<tuple<>>::value\x1b[m\x1b[K,\n'}
+[2.391174] (robot_waypoint_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.391248] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1371:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K(0 < ((long unsigned int)std::integral_constant<long unsigned int, 0>::value))\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[2.391323] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid waypointPublish::send_waypoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.391421] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kget<3>(__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.391501] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.391576] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.391652] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.391726] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.391800] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.391875] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.391950] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:223:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(std::pair<_Tp1, _Tp2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.392027] (robot_waypoint_pkg) StderrLine: {'line': b'  223 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(pair<_Tp1, _Tp2>& __in) noexcept\n'}
+[2.392113] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.392187] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:223:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.392271] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_Tp1, _Tp2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.392348] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.392459] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.392534] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.392609] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.392684] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.392758] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.392833] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:228:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(std::pair<_Tp1, _Tp2>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.392909] (robot_waypoint_pkg) StderrLine: {'line': b'  228 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(pair<_Tp1, _Tp2>&& __in) noexcept\n'}
+[2.392984] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.393058] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:228:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.393133] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_Tp1, _Tp2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.393210] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.393283] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.393364] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.393455] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.393530] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.393615] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.393691] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:233:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type& std::get(const std::pair<_Tp1, _Tp2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.393768] (robot_waypoint_pkg) StderrLine: {'line': b'  233 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const pair<_Tp1, _Tp2>& __in) noexcept\n'}
+[2.393842] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.393917] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:233:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.393992] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<_Tp1, _Tp2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.394075] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.394153] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.394228] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.394302] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.394398] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.394483] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.394558] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:238:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp1, class _Tp2> constexpr const typename std::tuple_element<_Int, std::pair<_Tp1, _Tp2> >::type&& std::get(const std::pair<_Tp1, _Tp2>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.394634] (robot_waypoint_pkg) StderrLine: {'line': b'  238 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const pair<_Tp1, _Tp2>&& __in) noexcept\n'}
+[2.394707] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.394781] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:238:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.394856] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::pair<_Tp1, _Tp2>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.394951] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.395026] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.395100] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.395173] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.395246] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.395319] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.395412] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:247:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.395492] (robot_waypoint_pkg) StderrLine: {'line': b'  247 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(pair<_Tp, _Up>& __p) noexcept\n'}
+[2.395566] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.395640] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:247:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.395714] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.395791] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.395865] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.395938] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.396013] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.396086] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.396163] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.396244] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.396319] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:252:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.396421] (robot_waypoint_pkg) StderrLine: {'line': b'  252 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const pair<_Tp, _Up>& __p) noexcept\n'}
+[2.396497] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.396585] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:252:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.396659] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_T1, _T2>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.396745] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.396819] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.396894] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.396969] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.397044] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.397119] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.397192] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.397267] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:257:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.397361] (robot_waypoint_pkg) StderrLine: {'line': b'  257 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(pair<_Tp, _Up>&& __p) noexcept\n'}
+[2.397459] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.397533] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:257:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.397607] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_T1, _T2>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.397682] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.397757] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.397831] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.397906] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.397979] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.398053] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.398136] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.398210] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:262:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.398286] (robot_waypoint_pkg) StderrLine: {'line': b'  262 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const pair<_Tp, _Up>&& __p) noexcept\n'}
+[2.398366] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.398457] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:262:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.398531] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_T1, _T2>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.398608] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.398682] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.398761] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.398838] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.398912] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.398986] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.399062] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.399145] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:267:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.399220] (robot_waypoint_pkg) StderrLine: {'line': b'  267 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(pair<_Up, _Tp>& __p) noexcept\n'}
+[2.399298] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.399387] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:267:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.399472] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp& std::get(std::pair<_Up, _Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.399549] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.399631] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.399705] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.399781] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.399855] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.399929] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.400012] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.400092] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:272:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.400170] (robot_waypoint_pkg) StderrLine: {'line': b'  272 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const pair<_Up, _Tp>& __p) noexcept\n'}
+[2.400243] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.400318] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:272:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.400414] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp& std::get(const std::pair<_Up, _Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.400496] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.400569] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.400643] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.400718] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.400792] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.400865] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.400944] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.401018] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:277:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.401092] (robot_waypoint_pkg) StderrLine: {'line': b'  277 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(pair<_Up, _Tp>&& __p) noexcept\n'}
+[2.401184] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.401262] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:277:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.401336] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr _Tp&& std::get(std::pair<_Up, _Tp>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.401440] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.401517] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.401599] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.401675] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.401749] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.401821] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.401901] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.401976] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:282:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.402052] (robot_waypoint_pkg) StderrLine: {'line': b'  282 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const pair<_Up, _Tp>&& __p) noexcept\n'}
+[2.402125] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.402198] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:282:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.402273] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr const _Tp&& std::get(const std::pair<_Up, _Tp>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.402349] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.402448] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.402535] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.402618] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.402693] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.402783] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.402858] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.402932] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.403008] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:361:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp& std::get(std::array<_Tp, _Nm>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.403084] (robot_waypoint_pkg) StderrLine: {'line': b'  361 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(array<_Tp, _Nm>& __arr) noexcept\n'}
+[2.403158] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.403232] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:361:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.403306] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.403401] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.403484] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.403559] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.403634] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.403711] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.403795] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.403872] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.403948] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:369:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr _Tp&& std::get(std::array<_Tp, _Nm>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.404034] (robot_waypoint_pkg) StderrLine: {'line': b'  369 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(array<_Tp, _Nm>&& __arr) noexcept\n'}
+[2.404109] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.404185] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:369:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.404260] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.404346] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.404558] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.404868] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.405107] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.405298] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.405484] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.405611] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.405730] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:377:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp& std::get(const std::array<_Tp, _Nm>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.405851] (robot_waypoint_pkg) StderrLine: {'line': b'  377 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const array<_Tp, _Nm>& __arr) noexcept\n'}
+[2.405967] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.406084] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:377:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.406167] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.406245] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.406301] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.406363] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/tuple:39\x1b[m\x1b[K,\n'}
+[2.406428] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.406483] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.406537] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.406592] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.406647] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:385:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Int, class _Tp, long unsigned int _Nm> constexpr const _Tp&& std::get(const std::array<_Tp, _Nm>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.406712] (robot_waypoint_pkg) StderrLine: {'line': b'  385 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const array<_Tp, _Nm>&& __arr) noexcept\n'}
+[2.406774] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.406829] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/array:385:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.406884] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::array<_Tp, _Nm>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.406941] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.407001] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.407055] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.407110] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.407164] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.407219] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.407273] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1393:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.407330] (robot_waypoint_pkg) StderrLine: {'line': b' 1393 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(tuple<_Elements...>& __t) noexcept\n'}
+[2.407409] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.407466] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1393:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.407522] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:36\x1b[m\x1b[K,\n'}
+[2.407576] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.407632] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.407686] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.407741] (robot_waypoint_pkg) StderrLine: {'line': b'/usr/include/c++/11/utility: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class _Tp> using __tuple_element_t = typename std::tuple_element::type [with long unsigned int __i = 3; _Tp = std::tuple<double, double, double>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.407802] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1393:5:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(std::tuple<_UTypes ...>&) [with long unsigned int __i = 3; _Elements = {double, double, double}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.407859] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K   required from here\n'}
+[2.407914] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/utility:118:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::tuple_element<3, std::tuple<double, double, double> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.407981] (robot_waypoint_pkg) StderrLine: {'line': b'  118 |     using \x1b[01;31m\x1b[K__tuple_element_t\x1b[m\x1b[K = typename tuple_element<__i, _Tp>::type;\n'}
+[2.408037] (robot_waypoint_pkg) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.408092] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.408147] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.408201] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.408256] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.408311] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1399:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >& std::get(const std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.408384] (robot_waypoint_pkg) StderrLine: {'line': b' 1399 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const tuple<_Elements...>& __t) noexcept\n'}
+[2.408448] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.408504] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1399:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.408559] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1405:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(std::tuple<_UTypes ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.408615] (robot_waypoint_pkg) StderrLine: {'line': b' 1405 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(tuple<_Elements...>&& __t) noexcept\n'}
+[2.408669] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.408724] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1405:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.408779] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1414:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int __i, class ... _Elements> constexpr std::__tuple_element_t<__i, std::tuple<_UTypes ...> >&& std::get(const std::tuple<_UTypes ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.408840] (robot_waypoint_pkg) StderrLine: {'line': b' 1414 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const tuple<_Elements...>&& __t) noexcept\n'}
+[2.408900] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.408955] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1414:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  substitution of deduced template arguments resulted in errors seen above\n'}
+[2.409008] (-) TimerEvent: {}
+[2.409091] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1449:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.409153] (robot_waypoint_pkg) StderrLine: {'line': b' 1449 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(tuple<_Types...>& __t) noexcept\n'}
+[2.409210] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.409270] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1449:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.409325] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.409400] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.409459] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.409514] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.409569] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.409624] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.409678] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.409732] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.409787] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1460:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.409842] (robot_waypoint_pkg) StderrLine: {'line': b' 1460 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(tuple<_Types...>&& __t) noexcept\n'}
+[2.409896] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.409950] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1460:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.410005] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::tuple<_UTypes ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.410074] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.410134] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.410189] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.410244] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.410299] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.410359] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.410423] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.410479] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1471:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.410534] (robot_waypoint_pkg) StderrLine: {'line': b' 1471 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const tuple<_Types...>& __t) noexcept\n'}
+[2.410589] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.410643] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1471:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.410703] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::tuple<_UTypes ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.410759] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.410814] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.410869] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.410924] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:37\x1b[m\x1b[K,\n'}
+[2.410980] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[2.411034] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[2.411089] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.411144] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1483:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.411200] (robot_waypoint_pkg) StderrLine: {'line': b' 1483 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const tuple<_Types...>&& __t) noexcept\n'}
+[2.411261] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.411316] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/tuple:1483:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.411378] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::tuple<_UTypes ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.411442] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.411497] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.411552] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.411608] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.411663] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.411717] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.411772] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.411832] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.411891] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.411946] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.412001] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.412055] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.412110] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.412164] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.412224] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1676:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.412280] (robot_waypoint_pkg) StderrLine: {'line': b' 1676 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(variant<_Types...>& __v)\n'}
+[2.412335] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.412409] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1676:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.412481] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.412545] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.412600] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.412654] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.412709] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.412763] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.412818] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.412873] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.412927] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.412983] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.413042] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.413098] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.413152] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.413207] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.413262] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1687:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(std::variant<_Types ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.413318] (robot_waypoint_pkg) StderrLine: {'line': b' 1687 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(variant<_Types...>&& __v)\n'}
+[2.413390] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.413449] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1687:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.413504] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.413567] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.413622] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.413677] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.413738] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.413797] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.413852] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.413906] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.413961] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.414015] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.414070] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.414124] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.414179] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.414238] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.414293] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1698:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >& std::get(const std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.414350] (robot_waypoint_pkg) StderrLine: {'line': b' 1698 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const variant<_Types...>& __v)\n'}
+[2.414417] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.414472] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1698:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.414528] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.414585] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.414645] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.414700] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.414756] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.414817] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.414884] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.414939] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.414995] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.415050] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.415104] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.415158] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.415213] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.415267] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.415321] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1709:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<long unsigned int _Np, class ... _Types> constexpr std::variant_alternative_t<_Np, std::variant<_Types ...> >&& std::get(const std::variant<_Types ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.415387] (robot_waypoint_pkg) StderrLine: {'line': b' 1709 |     \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const variant<_Types...>&& __v)\n'}
+[2.415445] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.415500] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1709:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.415555] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<std::tuple<double, double, double> >, std::tuple<double, double, double> >::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::variant<_Types ...>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.415623] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;36m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.415678] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.415732] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.415787] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.415847] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.415906] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.415961] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.416015] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.416070] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.416125] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.416179] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.416234] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.416288] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.416343] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1117:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.416417] (robot_waypoint_pkg) StderrLine: {'line': b' 1117 |     constexpr _Tp& \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(variant<_Types...>& __v)\n'}
+[2.416474] (robot_waypoint_pkg) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.416529] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1117:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.416584] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp& std::get(std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.416641] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.416696] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.416751] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.416806] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.416861] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.416917] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.416971] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.417032] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.417087] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.417142] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.417197] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.417252] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.417307] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.417372] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.417435] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1126:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.417490] (robot_waypoint_pkg) StderrLine: {'line': b' 1126 |     constexpr _Tp&& \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(variant<_Types...>&& __v)\n'}
+[2.417545] (robot_waypoint_pkg) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.417600] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1126:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.417662] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr _Tp&& std::get(std::variant<_Types ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.417730] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.417786] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.417841] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.417897] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.417951] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.418005] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.418060] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.418115] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.418169] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.418229] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.418284] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.418339] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.418404] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.418460] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.418514] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1136:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.418570] (robot_waypoint_pkg) StderrLine: {'line': b' 1136 |     constexpr const _Tp& \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const variant<_Types...>& __v)\n'}
+[2.418625] (robot_waypoint_pkg) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.418680] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1136:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.418735] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp& std::get(const std::variant<_Types ...>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.418792] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.418847] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.418902] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.418958] (robot_waypoint_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:28\x1b[m\x1b[K,\n'}
+[2.419013] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.419067] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.419122] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.419177] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.419232] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.419286] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.419341] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.419411] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.419475] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.419530] (robot_waypoint_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:2\x1b[m\x1b[K:\n'}
+[2.419599] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1145:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.419658] (robot_waypoint_pkg) StderrLine: {'line': b' 1145 |     constexpr const _Tp&& \x1b[01;36m\x1b[Kget\x1b[m\x1b[K(const variant<_Types...>&& __v)\n'}
+[2.419712] (robot_waypoint_pkg) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.419765] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/variant:1145:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[2.419818] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype/value mismatch at argument 1 in template parameter list for \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Types> constexpr const _Tp&& std::get(const std::variant<_Types ...>&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.419873] (robot_waypoint_pkg) StderrLine: {'line': b'   98 |     speed_msg.data = static_cast<float>(\x1b[01;31m\x1b[Kstd::get<3>(waypoint[current_waypoint_index])\x1b[m\x1b[K);\n'}
+[2.419927] (robot_waypoint_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.419980] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:98:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  expected a type, got \xe2\x80\x98\x1b[01m\x1b[K3\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.509191] (-) TimerEvent: {}
+[2.609636] (-) TimerEvent: {}
+[2.709935] (-) TimerEvent: {}
+[2.810280] (-) TimerEvent: {}
+[2.910706] (-) TimerEvent: {}
+[3.011078] (-) TimerEvent: {}
+[3.111451] (-) TimerEvent: {}
+[3.211944] (-) TimerEvent: {}
+[3.312400] (-) TimerEvent: {}
+[3.412912] (-) TimerEvent: {}
+[3.513400] (-) TimerEvent: {}
+[3.613840] (-) TimerEvent: {}
+[3.714271] (-) TimerEvent: {}
+[3.814757] (-) TimerEvent: {}
+[3.915278] (-) TimerEvent: {}
+[4.015804] (-) TimerEvent: {}
+[4.116282] (-) TimerEvent: {}
+[4.216845] (-) TimerEvent: {}
+[4.317419] (-) TimerEvent: {}
+[4.417957] (-) TimerEvent: {}
+[4.518590] (-) TimerEvent: {}
+[4.619071] (-) TimerEvent: {}
+[4.719554] (-) TimerEvent: {}
+[4.820027] (-) TimerEvent: {}
+[4.920566] (-) TimerEvent: {}
+[5.021089] (-) TimerEvent: {}
+[5.121606] (-) TimerEvent: {}
+[5.222103] (-) TimerEvent: {}
+[5.231771] (robot_waypoint_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/robot_waypoint.dir/build.make:76: CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o] Error 1\n'}
+[5.232392] (robot_waypoint_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_waypoint.dir/all] Error 2\n'}
+[5.232964] (robot_waypoint_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.236344] (robot_waypoint_pkg) CommandEnded: {'returncode': 2}
+[5.256154] (robot_waypoint_pkg) JobEnded: {'identifier': 'robot_waypoint_pkg', 'rc': 2}
+[5.266908] (-) EventReactorShutdown: {}

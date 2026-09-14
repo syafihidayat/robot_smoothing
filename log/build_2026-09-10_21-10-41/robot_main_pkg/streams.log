@@ -1,0 +1,31 @@
+[0.027s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg -DCMAKE_INSTALL_PREFIX=/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg
+[0.213s] -- The C compiler identification is GNU 11.4.0
+[0.344s] -- The CXX compiler identification is GNU 11.4.0
+[0.354s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.456s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.456s] -- Detecting C compile features
+[0.456s] -- Detecting C compile features - done
+[0.461s] -- Detecting CXX compiler ABI info
+[0.558s] -- Detecting CXX compiler ABI info - done
+[0.564s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.565s] -- Detecting CXX compile features
+[0.565s] -- Detecting CXX compile features - done
+[0.573s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.736s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.854s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.981s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.981s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/include>
+[0.981s] -- Configured cppcheck exclude dirs and/or files: 
+[0.982s] -- Added test 'lint_cmake' to check CMake code style
+[0.983s] -- Added test 'uncrustify' to check C / C++ code style
+[0.983s] -- Configured uncrustify additional arguments: 
+[0.984s] -- Added test 'xmllint' to check XML markup files
+[0.986s] -- Configuring done
+[0.991s] -- Generating done
+[0.993s] -- Build files have been written to: /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg
+[1.000s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg -DCMAKE_INSTALL_PREFIX=/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg
+[1.001s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[1.060s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_main.dir/src/robot_main.cpp.o[0m
+[1.105s] [100%] [32m[1mLinking CXX executable robot_main[0m
+[1.158s] [100%] Built target robot_main

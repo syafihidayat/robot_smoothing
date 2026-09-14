@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:15 (find_package):
+  By not providing "Findtf2_geometry.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "tf2_geometry", but CMake did not find one.
+
+  Could not find a package configuration file provided by "tf2_geometry" with
+  any of the following names:
+
+    tf2_geometryConfig.cmake
+    tf2_geometry-config.cmake
+
+  Add the installation prefix of "tf2_geometry" to CMAKE_PREFIX_PATH or set
+  "tf2_geometry_DIR" to a directory containing one of the above files.  If
+  "tf2_geometry" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/robot_gui_pkg/robot_gui_pkg.egg-info
+writing ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/requires.txt
+writing top-level names to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/top_level.txt
+writing manifest file '../../build/robot_gui_pkg/robot_gui_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/robot_gui_pkg/robot_gui_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_gui_pkg/robot_gui_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build
+creating /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build/lib
+creating /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build/lib/robot_gui_pkg
+copying robot_gui_pkg/__init__.py -> /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build/lib/robot_gui_pkg
+copying robot_gui_pkg/robot_gui.py -> /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build/lib/robot_gui_pkg
+running install
+running install_lib
+creating /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg
+copying /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build/lib/robot_gui_pkg/__init__.py -> /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg
+copying /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build/lib/robot_gui_pkg/robot_gui.py -> /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg
+byte-compiling /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg/robot_gui.py to robot_gui.cpython-310.pyc
+running install_data
+creating /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/ament_index
+creating /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/ament_index/resource_index
+creating /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/ament_index/resource_index/packages
+copying resource/robot_gui_pkg -> /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg
+running install_egg_info
+Copying ../../build/robot_gui_pkg/robot_gui_pkg.egg-info to /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing robot_gui script to /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/robot_gui_pkg
+writing list of installed files to '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log'

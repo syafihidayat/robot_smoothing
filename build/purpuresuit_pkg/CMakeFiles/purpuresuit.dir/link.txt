@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o -o purpuresuit 

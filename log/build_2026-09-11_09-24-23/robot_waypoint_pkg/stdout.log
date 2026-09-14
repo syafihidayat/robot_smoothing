@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o[0m
+[100%] [32m[1mLinking CXX executable robot_waypoint[0m
+[100%] Built target robot_waypoint
+-- Install configuration: ""
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/robot_waypoint_pkg/robot_waypoint
+-- Set runtime path of "/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/robot_waypoint_pkg/robot_waypoint" to ""
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/package_run_dependencies/robot_waypoint_pkg
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/parent_prefix_path/robot_waypoint_pkg
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/path.sh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/environment/path.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.bash
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.sh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.zsh
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/local_setup.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/ament_index/resource_index/packages/robot_waypoint_pkg
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/cmake/robot_waypoint_pkgConfig.cmake
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/cmake/robot_waypoint_pkgConfig-version.cmake
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.xml

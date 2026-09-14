@@ -1,0 +1,22 @@
+[0.042s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16
+[0.350s] [100%] Built target purpuresuit
+[0.368s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16
+[0.371s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg
+[0.392s] -- Install configuration: ""
+[0.392s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib/purpuresuit_pkg/purpuresuit
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/ament_index/resource_index/package_run_dependencies/purpuresuit_pkg
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/ament_index/resource_index/parent_prefix_path/purpuresuit_pkg
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/ament_prefix_path.sh
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/ament_prefix_path.dsv
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/path.sh
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/environment/path.dsv
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.bash
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.sh
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.zsh
+[0.393s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/local_setup.dsv
+[0.394s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.dsv
+[0.394s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/ament_index/resource_index/packages/purpuresuit_pkg
+[0.394s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/cmake/purpuresuit_pkgConfig.cmake
+[0.394s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/cmake/purpuresuit_pkgConfig-version.cmake
+[0.394s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.xml
+[0.395s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg

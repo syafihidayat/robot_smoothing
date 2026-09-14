@@ -1,0 +1,4 @@
+Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/lbringup -- -j16 -l16
+Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/lbringup -- -j16 -l16
+Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/lbringup
+Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/lbringup

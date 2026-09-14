@@ -1,0 +1,10 @@
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/uninstall.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/purpuresuit_pkg_uninstall.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/purpuresuit.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/test.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/edit_cache.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/rebuild_cache.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/list_install_components.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/install.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/install/local.dir
+/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/CMakeFiles/install/strip.dir
