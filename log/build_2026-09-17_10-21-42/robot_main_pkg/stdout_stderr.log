@@ -1,0 +1,7 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_main.dir/src/robot_main.cpp.o[0m
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::control_loop()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:226:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcontrol_angle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  226 |         float [01;35m[Kcontrol_angle[m[K = omni_angular.control_base_rotation(theta, max_angular_vel);
+      |               [01;35m[K^~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable robot_main[0m
+[100%] Built target robot_main

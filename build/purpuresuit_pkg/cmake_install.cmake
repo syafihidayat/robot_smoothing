@@ -52,6 +52,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/purpuresuit_pkg" TYPE EXECUTABLE FILES "/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg/purpuresuit")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/purpuresuit_pkg/purpuresuit" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/purpuresuit_pkg/purpuresuit")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/purpuresuit_pkg/purpuresuit"
+         OLD_RPATH "/opt/ros/humble/lib:"
+         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/purpuresuit_pkg/purpuresuit")
     endif()

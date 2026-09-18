@@ -1,0 +1,383 @@
+[0.095s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.095s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7306b485a6e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7306b49c04c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7306b49c04c0>>)
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.280s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/syafihidayat/Documents/robot_smoothing'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.280s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(src/lbringup) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lbringup' with type 'ros.ament_cmake' and name 'lbringup'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(src/purpuresuit_pkg) by extension 'ros'
+[0.334s] DEBUG:colcon.colcon_core.package_identification:Package 'src/purpuresuit_pkg' with type 'ros.ament_cmake' and name 'purpuresuit_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui_pkg) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_gui_pkg' with type 'ros.ament_python' and name 'robot_gui_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_main_pkg) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_main_pkg' with type 'ros.ament_cmake' and name 'robot_main_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_waypoint_pkg) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_waypoint_pkg' with type 'ros.ament_cmake' and name 'robot_waypoint_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.363s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/syafihidayat/Documents/robot_smoothing/install
+[0.364s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/syafihidayat/microros_ws/install
+[0.366s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 401 installed packages in /opt/ros/humble
+[0.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'cmake_target' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'lbringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.422s] DEBUG:colcon.colcon_core.verb:Building package 'lbringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/syafihidayat/Documents/robot_smoothing/build/lbringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/syafihidayat/Documents/robot_smoothing/install/lbringup', 'merge_install': False, 'path': '/home/syafihidayat/Documents/robot_smoothing/src/lbringup', 'symlink_install': False, 'test_result_base': None}
+[0.422s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'cmake_target' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'purpuresuit_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] DEBUG:colcon.colcon_core.verb:Building package 'purpuresuit_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg', 'merge_install': False, 'path': '/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'cmake_target' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_gui_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.423s] DEBUG:colcon.colcon_core.verb:Building package 'robot_gui_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg', 'merge_install': False, 'path': '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.423s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'cmake_target' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_main_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.424s] DEBUG:colcon.colcon_core.verb:Building package 'robot_main_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg', 'merge_install': False, 'path': '/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'cmake_target' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.424s] Level 5:colcon.colcon_core.verb:set package 'robot_waypoint_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.424s] DEBUG:colcon.colcon_core.verb:Building package 'robot_waypoint_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg', 'merge_install': False, 'path': '/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.424s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.425s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.426s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/syafihidayat/Documents/robot_smoothing/src/lbringup' with build type 'ament_cmake'
+[0.426s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/syafihidayat/Documents/robot_smoothing/src/lbringup'
+[0.427s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.434s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg' with build type 'ament_cmake'
+[0.435s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg'
+[0.435s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.435s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.442s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg' with build type 'ament_python'
+[0.442s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_gui_pkg', 'ament_prefix_path')
+[0.442s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/hook/ament_prefix_path.ps1'
+[0.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/hook/ament_prefix_path.dsv'
+[0.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/hook/ament_prefix_path.sh'
+[0.446s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.446s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.451s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg' with build type 'ament_cmake'
+[0.451s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg'
+[0.451s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.451s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.459s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg' with build type 'ament_cmake'
+[0.459s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg'
+[0.459s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.459s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.474s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/lbringup -- -j16 -l16
+[0.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16
+[0.883s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg'
+[0.883s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.883s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[0.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg -- -j16 -l16
+[0.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/lbringup -- -j16 -l16
+[0.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/lbringup
+[0.927s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg
+[0.947s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lbringup)
+[0.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/lbringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/lbringup
+[0.954s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup' for CMake module files
+[0.956s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup' for CMake config files
+[0.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('lbringup', 'cmake_prefix_path')
+[0.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/hook/cmake_prefix_path.ps1'
+[0.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/hook/cmake_prefix_path.dsv'
+[0.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/hook/cmake_prefix_path.sh'
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/bin'
+[0.960s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/lib/pkgconfig/lbringup.pc'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/lib/python3.10/site-packages'
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/bin'
+[0.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.ps1'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.dsv'
+[0.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.sh'
+[0.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.bash'
+[0.966s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.zsh'
+[0.967s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/colcon-core/packages/lbringup)
+[0.968s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lbringup)
+[0.968s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup' for CMake module files
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup' for CMake config files
+[0.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('lbringup', 'cmake_prefix_path')
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/hook/cmake_prefix_path.ps1'
+[0.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/hook/cmake_prefix_path.dsv'
+[0.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/hook/cmake_prefix_path.sh'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/bin'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/lib/pkgconfig/lbringup.pc'
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/lib/python3.10/site-packages'
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/bin'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.ps1'
+[0.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.dsv'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.sh'
+[0.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.bash'
+[0.979s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.zsh'
+[0.980s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/colcon-core/packages/lbringup)
+[0.981s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(purpuresuit_pkg)
+[0.982s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg' for CMake module files
+[0.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg
+[0.983s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg' for CMake config files
+[0.983s] Level 1:colcon.colcon_core.shell:create_environment_hook('purpuresuit_pkg', 'cmake_prefix_path')
+[0.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/hook/cmake_prefix_path.ps1'
+[0.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/hook/cmake_prefix_path.dsv'
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/hook/cmake_prefix_path.sh'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib'
+[0.987s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/bin'
+[0.987s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib/pkgconfig/purpuresuit_pkg.pc'
+[0.988s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib/python3.10/site-packages'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/bin'
+[0.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.ps1'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.dsv'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.sh'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.bash'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.zsh'
+[0.993s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/colcon-core/packages/purpuresuit_pkg)
+[0.994s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(purpuresuit_pkg)
+[0.994s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg' for CMake module files
+[0.995s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg' for CMake config files
+[0.995s] Level 1:colcon.colcon_core.shell:create_environment_hook('purpuresuit_pkg', 'cmake_prefix_path')
+[0.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/hook/cmake_prefix_path.ps1'
+[0.996s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/hook/cmake_prefix_path.dsv'
+[0.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/hook/cmake_prefix_path.sh'
+[0.998s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib'
+[0.998s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/bin'
+[0.998s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib/pkgconfig/purpuresuit_pkg.pc'
+[0.998s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/lib/python3.10/site-packages'
+[0.999s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/bin'
+[0.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.ps1'
+[1.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.dsv'
+[1.001s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.sh'
+[1.002s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.bash'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/purpuresuit_pkg/package.zsh'
+[1.006s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg/share/colcon-core/packages/purpuresuit_pkg)
+[1.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[1.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg
+[1.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg -- -j16 -l16
+[1.047s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg
+[1.060s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_main_pkg)
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg' for CMake module files
+[1.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg' for CMake config files
+[1.065s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_main_pkg', 'cmake_prefix_path')
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/hook/cmake_prefix_path.ps1'
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/hook/cmake_prefix_path.dsv'
+[1.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/hook/cmake_prefix_path.sh'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/bin'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/pkgconfig/robot_main_pkg.pc'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/python3.10/site-packages'
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/bin'
+[1.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.ps1'
+[1.071s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.dsv'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.sh'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.bash'
+[1.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.zsh'
+[1.073s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/colcon-core/packages/robot_main_pkg)
+[1.074s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_main_pkg)
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg' for CMake module files
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg' for CMake config files
+[1.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_main_pkg', 'cmake_prefix_path')
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/hook/cmake_prefix_path.ps1'
+[1.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/hook/cmake_prefix_path.dsv'
+[1.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/hook/cmake_prefix_path.sh'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib'
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/bin'
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/pkgconfig/robot_main_pkg.pc'
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/python3.10/site-packages'
+[1.078s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/bin'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.ps1'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.dsv'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.sh'
+[1.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.bash'
+[1.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.zsh'
+[1.082s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/colcon-core/packages/robot_main_pkg)
+[1.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_waypoint_pkg)
+[1.084s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg' for CMake module files
+[1.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg
+[1.085s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg' for CMake config files
+[1.085s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_waypoint_pkg', 'cmake_prefix_path')
+[1.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/hook/cmake_prefix_path.ps1'
+[1.086s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/hook/cmake_prefix_path.dsv'
+[1.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/hook/cmake_prefix_path.sh'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/bin'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/pkgconfig/robot_waypoint_pkg.pc'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/python3.10/site-packages'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/bin'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.ps1'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.dsv'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.sh'
+[1.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.bash'
+[1.092s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.zsh'
+[1.092s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/colcon-core/packages/robot_waypoint_pkg)
+[1.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_waypoint_pkg)
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg' for CMake module files
+[1.094s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg' for CMake config files
+[1.094s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_waypoint_pkg', 'cmake_prefix_path')
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/hook/cmake_prefix_path.ps1'
+[1.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/hook/cmake_prefix_path.dsv'
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/hook/cmake_prefix_path.sh'
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib'
+[1.096s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/bin'
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/pkgconfig/robot_waypoint_pkg.pc'
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/lib/python3.10/site-packages'
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/bin'
+[1.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.ps1'
+[1.098s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.dsv'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.sh'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.bash'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/robot_waypoint_pkg/package.zsh'
+[1.101s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg/share/colcon-core/packages/robot_waypoint_pkg)
+[1.467s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: saveopts, install_data, build_clib, easy_install, build_scripts, upload_docs, build_ext, register, install, develop, rotate, install_lib, build, extract_messages, egg_info, dist_info, setopt, update_catalog, symlink_data, install_egg_info, init_catalog, install_scripts, upload, sdist, compile_catalog, bdist_wheel, bdist_rpm, install_headers, alias, bdist_egg, bdist, build_py, test, clean, check, bdist_dumb
+[1.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg': PYTHONPATH=/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_gui_pkg build --build-base /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build install --record /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log --install-scripts $base/lib/robot_gui_pkg --single-version-externally-managed install_data
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg' for CMake module files
+[1.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg' returned '0': PYTHONPATH=/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_gui_pkg build --build-base /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build install --record /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log --install-scripts $base/lib/robot_gui_pkg --single-version-externally-managed install_data
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg' for CMake config files
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib'
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/bin'
+[1.806s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/pkgconfig/robot_gui_pkg.pc'
+[1.807s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages'
+[1.807s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_gui_pkg', 'pythonpath')
+[1.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/hook/pythonpath.ps1'
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/hook/pythonpath.dsv'
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/hook/pythonpath.sh'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/bin'
+[1.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_gui_pkg)
+[1.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/package.ps1'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/package.dsv'
+[1.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/package.sh'
+[1.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/package.bash'
+[1.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/robot_gui_pkg/package.zsh'
+[1.812s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/share/colcon-core/packages/robot_gui_pkg)
+[1.812s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.813s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.813s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.813s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.820s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.820s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.821s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.840s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.841s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/syafihidayat/Documents/robot_smoothing/install/local_setup.ps1'
+[1.842s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/syafihidayat/Documents/robot_smoothing/install/_local_setup_util_ps1.py'
+[1.845s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/syafihidayat/Documents/robot_smoothing/install/setup.ps1'
+[1.848s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/syafihidayat/Documents/robot_smoothing/install/local_setup.sh'
+[1.849s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/syafihidayat/Documents/robot_smoothing/install/_local_setup_util_sh.py'
+[1.849s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/syafihidayat/Documents/robot_smoothing/install/setup.sh'
+[1.851s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/syafihidayat/Documents/robot_smoothing/install/local_setup.bash'
+[1.853s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/syafihidayat/Documents/robot_smoothing/install/setup.bash'
+[1.855s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/syafihidayat/Documents/robot_smoothing/install/local_setup.zsh'
+[1.856s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/syafihidayat/Documents/robot_smoothing/install/setup.zsh'

@@ -1,0 +1,6 @@
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:4:17:[m[K [01;31m[Kerror: [m[Kmissing terminating > character
+    4 | #include <memory
+      |                 [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

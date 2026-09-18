@@ -1,0 +1,30 @@
+[0.610s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[0.749s] [35m[1mConsolidate compiler generated dependencies of target robot_main[0m
+[0.801s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_main.dir/src/robot_main.cpp.o[0m
+[5.383s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::control_loop()[m[K’:
+[5.384s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:228:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcontrol_angle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.384s]   228 |         float [01;35m[Kcontrol_angle[m[K = omni_angular.control_base_rotation(theta, max_angular_vel);
+[5.384s]       |               [01;35m[K^~~~~~~~~~~~~[m[K
+[19.584s] [100%] [32m[1mLinking CXX executable robot_main[0m
+[21.759s] [100%] Built target robot_main
+[21.781s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[21.784s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg
+[21.796s] -- Install configuration: ""
+[21.797s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/robot_main_pkg/robot_main
+[21.814s] -- Set runtime path of "/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/robot_main_pkg/robot_main" to ""
+[21.815s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/package_run_dependencies/robot_main_pkg
+[21.816s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/parent_prefix_path/robot_main_pkg
+[21.816s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.sh
+[21.816s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.dsv
+[21.817s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.sh
+[21.817s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.dsv
+[21.817s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.bash
+[21.817s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.sh
+[21.817s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.zsh
+[21.817s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.dsv
+[21.817s] -- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.dsv
+[21.818s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/packages/robot_main_pkg
+[21.818s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig.cmake
+[21.818s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig-version.cmake
+[21.818s] -- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.xml
+[21.824s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --install /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg

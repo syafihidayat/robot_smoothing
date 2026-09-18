@@ -1,0 +1,18 @@
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:[m[K In constructor ‘[01m[KwaypointPublish::waypointPublish()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:21:34:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid waypointPublish::path_finished_callback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’
+   21 |       std::bind([01;31m[KwaypointPublish::path_finished_callback[m[K, this, std::placeholders::_1));
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:144:8:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 |   void [01;36m[Kpath_finished_callback[m[K(const std_msgs::msg::Bool::SharedPtr msg)
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kreached_latched[m[K’ was not declared in this scope
+   52 |     [01;31m[Kreached_latched[m[K = false;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:[m[K In member function ‘[01m[Kvoid waypointPublish::send_all_waypoint()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:89:20:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kauto*[m[K’ from ‘[01m[K__for_begin .__gnu_cxx::__normal_iterator<std::tuple<double, double, double>*, std::vector<std::tuple<double, double, double> > >::operator*()[m[K’
+   89 |     for(auto *wp : [01;31m[Kwaypoint[m[K)
+      |                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:89:20:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kauto*[m[K’ and ‘[01m[Kstd::tuple<double, double, double>[m[K’
+gmake[2]: *** [CMakeFiles/robot_waypoint.dir/build.make:76: CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_waypoint.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,11 @@
+[0.025s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target purpuresuit[0m
+[0.129s] [ 50%] [32mBuilding CXX object CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o[0m
+[0.221s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:19:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.221s]    19 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[0.221s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.222s] compilation terminated.
+[0.226s] gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Error 1
+[0.226s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Error 2
+[0.227s] gmake: *** [Makefile:146: all] Error 2
+[0.232s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16

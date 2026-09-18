@@ -1,0 +1,15 @@
+[0.012s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target purpuresuit[0m
+[0.103s] [ 50%] [32mBuilding CXX object CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o[0m
+[2.373s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:[m[K In member function ‘[01m[Kvoid PurepursuitPathNode::pose_callback(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.373s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:191:32:[m[K [01;31m[Kerror: [m[K‘[01m[KbuildStraightPath[m[K’ was not declared in this scope
+[2.373s]   191 |                              : [01;31m[KbuildStraightPath[m[K(waypoints, path_step);
+[2.374s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.377s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:[m[K At global scope:
+[2.377s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:264:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids declaration of ‘[01m[Kmain[m[K’ with no type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.377s]   264 | [01;35m[Kmain[m[K(int argc, char **argv)
+[2.377s]       | [01;35m[K^~~~[m[K
+[5.485s] gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Error 1
+[5.486s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Error 2
+[5.486s] gmake: *** [Makefile:146: all] Error 2
+[5.490s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16

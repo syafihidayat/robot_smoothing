@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target purpuresuit[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o[0m
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:[m[K In static member function ‘[01m[Kstatic std::vector<Point2D> PurepursuitPathNode::buildStraightPath(const std::vector<Point2D>&, double)[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:152:59:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K:[m[K’ token
+  152 |             int steps = std::max(2, static_cast<int>(std::[01;31m[K:[m[Kround(seg_len / step)));
+      |                                                           [01;31m[K^[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:152:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K:[m[K’ token
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:151:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kseg_len[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  151 |             double [01;35m[Kseg_len[m[K = std::hypot(p1.x - p0.x, p1.y - p0.y);
+      |                    [01;35m[K^~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:143:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstep[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  143 | oint2D> buildStraightPath(const std::vector<Point2D> &pts, [01;35m[Kdouble step[m[K)
+      |                                                            [01;35m[K~~~~~~~^~~~[m[K
+
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:[m[K At global scope:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:284:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids declaration of ‘[01m[Kmain[m[K’ with no type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  284 | [01;35m[Kmain[m[K(int argc, char **argv)
+      | [01;35m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

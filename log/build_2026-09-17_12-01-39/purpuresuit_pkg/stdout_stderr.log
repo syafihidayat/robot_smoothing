@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target purpuresuit[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o[0m
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:[m[K In member function ‘[01m[Kvoid PurepursuitPathNode::pose_callback(std_msgs::msg::Float32MultiArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:191:32:[m[K [01;31m[Kerror: [m[K‘[01m[KbuildStraightPath[m[K’ was not declared in this scope
+  191 |                              : [01;31m[KbuildStraightPath[m[K(waypoints, path_step);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:[m[K At global scope:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/purpuresuit_pkg/src/purpuresuit.cpp:264:1:[m[K [01;35m[Kwarning: [m[KISO C++ forbids declaration of ‘[01m[Kmain[m[K’ with no type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+  264 | [01;35m[Kmain[m[K(int argc, char **argv)
+      | [01;35m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

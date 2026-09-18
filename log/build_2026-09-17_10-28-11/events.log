@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.000325] (-) JobUnselected: {'identifier': 'lbringup'}
+[0.000360] (-) JobUnselected: {'identifier': 'purpuresuit_pkg'}
+[0.000383] (-) JobUnselected: {'identifier': 'robot_gui_pkg'}
+[0.000405] (-) JobUnselected: {'identifier': 'robot_main_pkg'}
+[0.000429] (robot_waypoint_pkg) JobQueued: {'identifier': 'robot_waypoint_pkg', 'dependencies': OrderedDict()}
+[0.000940] (robot_waypoint_pkg) JobStarted: {'identifier': 'robot_waypoint_pkg'}
+[0.011167] (robot_waypoint_pkg) JobProgress: {'identifier': 'robot_waypoint_pkg', 'progress': 'cmake'}
+[0.011798] (robot_waypoint_pkg) JobProgress: {'identifier': 'robot_waypoint_pkg', 'progress': 'build'}
+[0.012591] (robot_waypoint_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg', '--', '-j16', '-l16'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2111'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2085,unix/syafihidayat:/tmp/.ICE-unix/2085'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e76c6daa_552b_49f5_b327_d7bbe833f6db'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.256'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.069960] (robot_waypoint_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_waypoint\x1b[0m\n'}
+[0.090887] (robot_waypoint_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o\x1b[0m\n'}
+[0.099683] (-) TimerEvent: {}
+[0.200119] (-) TimerEvent: {}
+[0.300589] (-) TimerEvent: {}
+[0.401033] (-) TimerEvent: {}
+[0.501391] (-) TimerEvent: {}
+[0.601783] (-) TimerEvent: {}
+[0.702359] (-) TimerEvent: {}
+[0.803414] (-) TimerEvent: {}
+[0.904138] (-) TimerEvent: {}
+[1.004829] (-) TimerEvent: {}
+[1.105563] (-) TimerEvent: {}
+[1.206184] (-) TimerEvent: {}
+[1.306651] (-) TimerEvent: {}
+[1.407200] (-) TimerEvent: {}
+[1.507691] (-) TimerEvent: {}
+[1.608213] (-) TimerEvent: {}
+[1.708644] (-) TimerEvent: {}
+[1.809037] (-) TimerEvent: {}
+[1.909425] (-) TimerEvent: {}
+[2.009852] (-) TimerEvent: {}
+[2.110417] (-) TimerEvent: {}
+[2.210898] (-) TimerEvent: {}
+[2.311323] (-) TimerEvent: {}
+[2.411844] (-) TimerEvent: {}
+[2.512378] (-) TimerEvent: {}
+[2.514725] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KwaypointPublish::waypointPublish()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.515005] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:21:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of non-static member function \xe2\x80\x98\x1b[01m\x1b[Kvoid waypointPublish::path_finished_callback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.515141] (robot_waypoint_pkg) StderrLine: {'line': b'   21 |       std::bind(\x1b[01;31m\x1b[KwaypointPublish::path_finished_callback\x1b[m\x1b[K, this, std::placeholders::_1));\n'}
+[2.515314] (robot_waypoint_pkg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.515447] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:144:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.515579] (robot_waypoint_pkg) StderrLine: {'line': b'  144 |   void \x1b[01;36m\x1b[Kpath_finished_callback\x1b[m\x1b[K(const std_msgs::msg::Bool::SharedPtr msg)\n'}
+[2.515710] (robot_waypoint_pkg) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.537943] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:52:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreached_latched\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.538283] (robot_waypoint_pkg) StderrLine: {'line': b'   52 |     \x1b[01;31m\x1b[Kreached_latched\x1b[m\x1b[K = false;\n'}
+[2.538535] (robot_waypoint_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.540305] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid waypointPublish::send_all_waypoint()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.540611] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:89:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to deduce \xe2\x80\x98\x1b[01m\x1b[Kauto*\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[K__for_begin .__gnu_cxx::__normal_iterator<std::tuple<double, double, double>*, std::vector<std::tuple<double, double, double> > >::operator*()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.540781] (robot_waypoint_pkg) StderrLine: {'line': b'   89 |     for(auto *wp : \x1b[01;31m\x1b[Kwaypoint\x1b[m\x1b[K)\n'}
+[2.540935] (robot_waypoint_pkg) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.541084] (robot_waypoint_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/syafihidayat/Documents/robot_smoothing/src/robot_waypoint_pkg/src/robot_waypoint.cpp:89:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kauto*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::tuple<double, double, double>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.612522] (-) TimerEvent: {}
+[2.712951] (-) TimerEvent: {}
+[2.813431] (-) TimerEvent: {}
+[2.913877] (-) TimerEvent: {}
+[3.014354] (-) TimerEvent: {}
+[3.114769] (-) TimerEvent: {}
+[3.215254] (-) TimerEvent: {}
+[3.315800] (-) TimerEvent: {}
+[3.416666] (-) TimerEvent: {}
+[3.517185] (-) TimerEvent: {}
+[3.617697] (-) TimerEvent: {}
+[3.718228] (-) TimerEvent: {}
+[3.819034] (-) TimerEvent: {}
+[3.919515] (-) TimerEvent: {}
+[4.019956] (-) TimerEvent: {}
+[4.120420] (-) TimerEvent: {}
+[4.220819] (-) TimerEvent: {}
+[4.321316] (-) TimerEvent: {}
+[4.421787] (-) TimerEvent: {}
+[4.522230] (-) TimerEvent: {}
+[4.622697] (-) TimerEvent: {}
+[4.723200] (-) TimerEvent: {}
+[4.823670] (-) TimerEvent: {}
+[4.924144] (-) TimerEvent: {}
+[5.024612] (-) TimerEvent: {}
+[5.125064] (-) TimerEvent: {}
+[5.225537] (-) TimerEvent: {}
+[5.326034] (-) TimerEvent: {}
+[5.426518] (-) TimerEvent: {}
+[5.526991] (-) TimerEvent: {}
+[5.627522] (-) TimerEvent: {}
+[5.724563] (robot_waypoint_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/robot_waypoint.dir/build.make:76: CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o] Error 1\n'}
+[5.724983] (robot_waypoint_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_waypoint.dir/all] Error 2\n'}
+[5.725743] (robot_waypoint_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.727594] (-) TimerEvent: {}
+[5.729163] (robot_waypoint_pkg) CommandEnded: {'returncode': 2}
+[5.738903] (robot_waypoint_pkg) JobEnded: {'identifier': 'robot_waypoint_pkg', 'rc': 2}
+[5.749763] (-) EventReactorShutdown: {}

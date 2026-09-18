@@ -47,7 +47,7 @@ public:
     float kp, ki, kd;
     float kpT, kiT, kdT;
 
-    this->declare_parameter("kp", 0.75);
+    this->declare_parameter("kp", 0.3);
     this->declare_parameter("ki", 0.0);
     this->declare_parameter("kd", 0.0);
 
@@ -85,7 +85,7 @@ private:
 
   float desired_linear_vel, max_angular_vel;
 
-  int stage1_target_total = 3;
+  int stage1_target_total = 1;
   int stage1_target_count = 0;
 
   bool stage1_complated = false;
@@ -151,11 +151,13 @@ private:
 
   void pose_callback(const geometry_msgs::msg::Point::SharedPtr msg)
   {
+    targetX = msg->x;
+    targetY = msg->y;
+    target_received = true;
+
+    
     if(current_state == WAITING_FOR_TARGET || current_state == TARGET_REACHED)
     {
-      targetX = msg->x;
-      targetY = msg->y;
-      target_received = true;
       current_state = MOVING_TO_TARGET;
 
       RCLCPP_INFO(this->get_logger(), "New target STAGE1 received: (%.2f, %.2f)", targetX, targetY);
@@ -166,16 +168,35 @@ private:
 
   void control_loop()
   {
-    if(!start_received)
-      return;
+    geometry_msgs::msg::Twist cmd;
 
-    if((current_state == WAITING_FOR_TARGET || current_state == MOVING_TO_TARGET) && !target_received)
+    if(!start_received) {
+      // Belum ada /odom -> publish 0 supaya topic hidup & ketahuan
+      // kalau odom mati (penyebab umum "cmd_vel sama sekali tak ada").
+      cmd.linear.x = 0.0;
+      cmd.linear.y = 0.0;
+      cmd.angular.z = 0.0;
+      cmd_pub->publish(cmd);
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
+        "menunggu /odom pertama...");
       return;
+    }
+
+    if((current_state == WAITING_FOR_TARGET || current_state == MOVING_TO_TARGET) && !target_received) {
+      // Sudah ada odom tapi belum ada /pose (belum tekan START /
+      // /robot_start belum sampai ke waypoint) -> publish 0.
+      cmd.linear.x = 0.0;
+      cmd.linear.y = 0.0;
+      cmd.angular.z = 0.0;
+      cmd_pub->publish(cmd);
+      RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
+        "odom OK, menunggu /pose (tekan START di GUI)...");
+      return;
+    }
 
       double currT = this->now().seconds();
       float deltaT = currT - prevT;
-
-      geometry_msgs::msg::Twist cmd;
+      (void)deltaT;
 
       switch(current_state)
       {
@@ -209,11 +230,12 @@ private:
 
         if(distance > 0.03)
         {
+          // cmd.linear.x = 0.3;
           cmd.linear.x = control_distance * std::cos(angle);
           cmd.linear.y = control_distance * std::sin(angle);
-          cmd.angular.z = control_angle ;
+          cmd.angular.z = 0 ;
 
-          RCLCPP_INFO(this->get_logger(), "move robot");
+          RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "move robot");
 
         }
         else
@@ -244,6 +266,8 @@ private:
 
           break;
         }
+
+        break;
       }
 
       case TARGET_REACHED:

@@ -1,0 +1,21 @@
+[1.521s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg': PYTHONPATH=/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_gui_pkg build --build-base /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build install --record /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log --install-scripts $base/lib/robot_gui_pkg --single-version-externally-managed install_data
+[2.008s] running egg_info
+[2.010s] writing ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/PKG-INFO
+[2.011s] writing dependency_links to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/dependency_links.txt
+[2.012s] writing entry points to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/entry_points.txt
+[2.012s] writing requirements to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/requires.txt
+[2.012s] writing top-level names to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/top_level.txt
+[2.018s] reading manifest file '../../build/robot_gui_pkg/robot_gui_pkg.egg-info/SOURCES.txt'
+[2.020s] writing manifest file '../../build/robot_gui_pkg/robot_gui_pkg.egg-info/SOURCES.txt'
+[2.020s] running build
+[2.021s] running build_py
+[2.021s] running install
+[2.022s] running install_lib
+[2.024s] running install_data
+[2.024s] running install_egg_info
+[2.027s] removing '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.029s] Copying ../../build/robot_gui_pkg/robot_gui_pkg.egg-info to /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg-0.0.0-py3.10.egg-info
+[2.031s] running install_scripts
+[2.069s] Installing robot_gui script to /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/robot_gui_pkg
+[2.071s] writing list of installed files to '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log'
+[2.174s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg' returned '0': PYTHONPATH=/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_gui_pkg build --build-base /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build install --record /home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log --install-scripts $base/lib/robot_gui_pkg --single-version-externally-managed install_data

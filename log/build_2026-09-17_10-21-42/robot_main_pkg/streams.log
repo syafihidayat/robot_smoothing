@@ -1,0 +1,8 @@
+[0.356s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg -- -j16 -l16
+[0.507s] [ 50%] [32mBuilding CXX object CMakeFiles/robot_main.dir/src/robot_main.cpp.o[0m
+[3.219s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::control_loop()[m[K’:
+[3.219s] [01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:226:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcontrol_angle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.220s]   226 |         float [01;35m[Kcontrol_angle[m[K = omni_angular.control_base_rotation(theta, max_angular_vel);
+[3.220s]       |               [01;35m[K^~~~~~~~~~~~~[m[K
+[11.299s] [100%] [32m[1mLinking CXX executable robot_main[0m
+[12.439s] [100%] Built target robot_main
