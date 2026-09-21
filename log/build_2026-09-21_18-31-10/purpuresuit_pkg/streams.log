@@ -1,0 +1,6 @@
+[0.038s] Invoking command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16
+[0.316s] [ 50%] [32mBuilding CXX object CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o[0m
+[299.458s] gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Interrupt
+[299.472s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Interrupt
+[299.472s] gmake: *** [Makefile:146: all] Interrupt
+[299.605s] Invoked command in '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble /usr/bin/cmake --build /home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg -- -j16 -l16

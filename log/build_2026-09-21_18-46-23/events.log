@@ -1,0 +1,604 @@
+[0.000000] (-) TimerEvent: {}
+[0.000765] (lbringup) JobQueued: {'identifier': 'lbringup', 'dependencies': OrderedDict()}
+[0.000927] (purpuresuit_pkg) JobQueued: {'identifier': 'purpuresuit_pkg', 'dependencies': OrderedDict()}
+[0.000977] (robot_gui_pkg) JobQueued: {'identifier': 'robot_gui_pkg', 'dependencies': OrderedDict()}
+[0.001008] (robot_main_pkg) JobQueued: {'identifier': 'robot_main_pkg', 'dependencies': OrderedDict()}
+[0.001041] (robot_waypoint_pkg) JobQueued: {'identifier': 'robot_waypoint_pkg', 'dependencies': OrderedDict()}
+[0.001087] (lbringup) JobStarted: {'identifier': 'lbringup'}
+[0.010383] (purpuresuit_pkg) JobStarted: {'identifier': 'purpuresuit_pkg'}
+[0.015549] (robot_gui_pkg) JobStarted: {'identifier': 'robot_gui_pkg'}
+[0.024088] (robot_main_pkg) JobStarted: {'identifier': 'robot_main_pkg'}
+[0.028845] (robot_waypoint_pkg) JobStarted: {'identifier': 'robot_waypoint_pkg'}
+[0.035441] (lbringup) JobProgress: {'identifier': 'lbringup', 'progress': 'cmake'}
+[0.036313] (lbringup) JobProgress: {'identifier': 'lbringup', 'progress': 'build'}
+[0.036922] (lbringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/syafihidayat/Documents/robot_smoothing/build/lbringup', '--', '-j16', '-l16'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/lbringup', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2054'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install:/home/syafihidayat/Documents/ros2_lidar/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2027,unix/syafihidayat:/tmp/.ICE-unix/2027'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc00c9e1_ce14_492c_99a7_0940c0e56654'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1757'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/lbringup'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.040302] (purpuresuit_pkg) JobProgress: {'identifier': 'purpuresuit_pkg', 'progress': 'cmake'}
+[0.041396] (purpuresuit_pkg) JobProgress: {'identifier': 'purpuresuit_pkg', 'progress': 'build'}
+[0.041967] (purpuresuit_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg', '--', '-j16', '-l16'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2054'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install:/home/syafihidayat/Documents/ros2_lidar/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2027,unix/syafihidayat:/tmp/.ICE-unix/2027'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc00c9e1_ce14_492c_99a7_0940c0e56654'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1757'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/purpuresuit_pkg'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099773] (-) TimerEvent: {}
+[0.200193] (-) TimerEvent: {}
+[0.300634] (-) TimerEvent: {}
+[0.317130] (robot_main_pkg) JobProgress: {'identifier': 'robot_main_pkg', 'progress': 'cmake'}
+[0.318079] (robot_main_pkg) JobProgress: {'identifier': 'robot_main_pkg', 'progress': 'build'}
+[0.319144] (robot_main_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg', '--', '-j16', '-l16'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2054'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install:/home/syafihidayat/Documents/ros2_lidar/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2027,unix/syafihidayat:/tmp/.ICE-unix/2027'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc00c9e1_ce14_492c_99a7_0940c0e56654'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1757'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.322400] (purpuresuit_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o\x1b[0m\n'}
+[0.324838] (robot_waypoint_pkg) JobProgress: {'identifier': 'robot_waypoint_pkg', 'progress': 'cmake'}
+[0.325778] (robot_waypoint_pkg) JobProgress: {'identifier': 'robot_waypoint_pkg', 'progress': 'build'}
+[0.326207] (robot_waypoint_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg', '--', '-j16', '-l16'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2054'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install:/home/syafihidayat/Documents/ros2_lidar/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2027,unix/syafihidayat:/tmp/.ICE-unix/2027'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc00c9e1_ce14_492c_99a7_0940c0e56654'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1757'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/robot_waypoint_pkg'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.332110] (lbringup) CommandEnded: {'returncode': 0}
+[0.334439] (lbringup) JobProgress: {'identifier': 'lbringup', 'progress': 'install'}
+[0.347374] (lbringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/syafihidayat/Documents/robot_smoothing/build/lbringup'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/lbringup', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2054'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install:/home/syafihidayat/Documents/ros2_lidar/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2027,unix/syafihidayat:/tmp/.ICE-unix/2027'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc00c9e1_ce14_492c_99a7_0940c0e56654'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1757'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/lbringup'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.357204] (lbringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.358372] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch\n'}
+[0.359516] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/lasers.launch.py\n'}
+[0.359692] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/default_robot.launch.py\n'}
+[0.359747] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/depth.launch.py\n'}
+[0.359796] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/extra_launch.py\n'}
+[0.359913] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/custom_robot.launch.py\n'}
+[0.360073] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/sensors.launch.py\n'}
+[0.360129] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/bringup.launch.py\n'}
+[0.360174] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/launch/joy_teleop.launch.py\n'}
+[0.360286] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config\n'}
+[0.360362] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/twist_mux.yaml\n'}
+[0.360434] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/zed_common.yaml\n'}
+[0.360500] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/box_laser_filter.yaml\n'}
+[0.360563] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/fake_laser.yaml\n'}
+[0.360616] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/ekf.yaml\n'}
+[0.360694] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/config/joy.yaml\n'}
+[0.360894] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/ament_index/resource_index/package_run_dependencies/lbringup\n'}
+[0.361183] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/ament_index/resource_index/parent_prefix_path/lbringup\n'}
+[0.361503] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/ament_prefix_path.sh\n'}
+[0.361635] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/ament_prefix_path.dsv\n'}
+[0.361685] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/path.sh\n'}
+[0.362283] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/environment/path.dsv\n'}
+[0.362432] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.bash\n'}
+[0.362506] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.sh\n'}
+[0.362552] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.zsh\n'}
+[0.362615] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/local_setup.dsv\n'}
+[0.362851] (lbringup) StdoutLine: {'line': b'-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.dsv\n'}
+[0.363647] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/ament_index/resource_index/packages/lbringup\n'}
+[0.363880] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/cmake/lbringupConfig.cmake\n'}
+[0.363940] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/cmake/lbringupConfig-version.cmake\n'}
+[0.364011] (lbringup) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/lbringup/share/lbringup/package.xml\n'}
+[0.367815] (lbringup) CommandEnded: {'returncode': 0}
+[0.389753] (lbringup) JobEnded: {'identifier': 'lbringup', 'rc': 0}
+[0.400778] (-) TimerEvent: {}
+[0.406764] (robot_waypoint_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o\x1b[0m\n'}
+[0.407304] (robot_main_pkg) StdoutLine: {'line': b'[100%] Built target robot_main\n'}
+[0.424880] (robot_main_pkg) CommandEnded: {'returncode': 0}
+[0.426494] (robot_main_pkg) JobProgress: {'identifier': 'robot_main_pkg', 'progress': 'install'}
+[0.426902] (robot_main_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg', 'env': OrderedDict([('LINOROBOT2_BASE', '2wd'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'syafihidayat'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/syafihidayat'), ('OLDPWD', '/home/syafihidayat'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '2054'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install:/home/syafihidayat/Documents/ros2_lidar/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'syafihidayat'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'syafihidayat'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin'), ('SESSION_MANAGER', 'local/syafihidayat:@/tmp/.ICE-unix/2027,unix/syafihidayat:/tmp/.ICE-unix/2027'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fc00c9e1_ce14_492c_99a7_0940c0e56654'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.1757'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/syafihidayat/Documents/robot_smoothing/build/robot_main_pkg'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/opt/ros/humble')]), 'shell': False}
+[0.436764] (robot_main_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.438335] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/robot_main_pkg/robot_main\n'}
+[0.438570] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/package_run_dependencies/robot_main_pkg\n'}
+[0.438884] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/parent_prefix_path/robot_main_pkg\n'}
+[0.439359] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.sh\n'}
+[0.439551] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.dsv\n'}
+[0.439718] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.sh\n'}
+[0.439822] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.dsv\n'}
+[0.439925] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.bash\n'}
+[0.440018] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.sh\n'}
+[0.440111] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.zsh\n'}
+[0.440202] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.dsv\n'}
+[0.440339] (robot_main_pkg) StdoutLine: {'line': b'-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.dsv\n'}
+[0.440446] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/packages/robot_main_pkg\n'}
+[0.440566] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig.cmake\n'}
+[0.440629] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig-version.cmake\n'}
+[0.440681] (robot_main_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.xml\n'}
+[0.443845] (robot_main_pkg) CommandEnded: {'returncode': 0}
+[0.455630] (robot_main_pkg) JobEnded: {'identifier': 'robot_main_pkg', 'rc': 0}
+[0.500930] (-) TimerEvent: {}
+[0.601398] (-) TimerEvent: {}
+[0.701810] (-) TimerEvent: {}
+[0.767708] (robot_gui_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_gui_pkg', 'build', '--build-base', '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/build', 'install', '--record', '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log', '--install-scripts', '$base/lib/robot_gui_pkg', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/syafihidayat/Documents/robot_smoothing/src/robot_gui_pkg', 'env': {'LINOROBOT2_BASE': '2wd', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'syafihidayat', 'LC_TIME': 'id_ID.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/syafihidayat/microros_ws/install/micro_ros_agent/lib:/home/syafihidayat/microros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/syafihidayat', 'OLDPWD': '/home/syafihidayat', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'SYSTEMD_EXEC_PID': '2054', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/syafihidayat/Documents/robot_smoothing/install:/home/syafihidayat/microros_ws/install:/home/syafihidayat/Documents/ros2_lidar/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'syafihidayat', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'syafihidayat', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/opt/ros/humble/share/turtlebot3_gazebo/models:/home/syafihidayat/swerve_test/install/swerve_description/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/syafihidayat/.local/bin:/opt/ros/humble/bin:/home/syafihidayat/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/syafihidayat/.lmstudio/bin:/home/syafihidayat/.lmstudio/bin', 'SESSION_MANAGER': 'local/syafihidayat:@/tmp/.ICE-unix/2027,unix/syafihidayat:/tmp/.ICE-unix/2027', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fc00c9e1_ce14_492c_99a7_0940c0e56654', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.1757', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'GAZEBO_MODEL_DATABASE_URI': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages:/home/syafihidayat/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/syafihidayat/Documents/robot_smoothing/install/robot_waypoint_pkg:/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg:/home/syafihidayat/Documents/robot_smoothing/install/purpuresuit_pkg:/home/syafihidayat/Documents/robot_smoothing/install/lbringup:/home/syafihidayat/Documents/ros2_lidar/install/sllidar_ros2:/home/syafihidayat/microros_ws/install/micro_ros_setup:/home/syafihidayat/microros_ws/install/micro_ros_agent:/home/syafihidayat/microros_ws/install/micro_ros_msgs'}, 'shell': False}
+[0.801962] (-) TimerEvent: {}
+[0.902508] (-) TimerEvent: {}
+[1.003108] (-) TimerEvent: {}
+[1.008722] (robot_gui_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.009898] (robot_gui_pkg) StdoutLine: {'line': b'writing ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/PKG-INFO\n'}
+[1.010688] (robot_gui_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/dependency_links.txt\n'}
+[1.010916] (robot_gui_pkg) StdoutLine: {'line': b'writing entry points to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/entry_points.txt\n'}
+[1.011068] (robot_gui_pkg) StdoutLine: {'line': b'writing requirements to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/requires.txt\n'}
+[1.011135] (robot_gui_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/robot_gui_pkg/robot_gui_pkg.egg-info/top_level.txt\n'}
+[1.013436] (robot_gui_pkg) StdoutLine: {'line': b"reading manifest file '../../build/robot_gui_pkg/robot_gui_pkg.egg-info/SOURCES.txt'\n"}
+[1.014780] (robot_gui_pkg) StdoutLine: {'line': b"writing manifest file '../../build/robot_gui_pkg/robot_gui_pkg.egg-info/SOURCES.txt'\n"}
+[1.015320] (robot_gui_pkg) StdoutLine: {'line': b'running build\n'}
+[1.015467] (robot_gui_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.015927] (robot_gui_pkg) StdoutLine: {'line': b'running install\n'}
+[1.016286] (robot_gui_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.017835] (robot_gui_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.018113] (robot_gui_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.019903] (robot_gui_pkg) StdoutLine: {'line': b"removing '/home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.020192] (robot_gui_pkg) StdoutLine: {'line': b'Copying ../../build/robot_gui_pkg/robot_gui_pkg.egg-info to /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/python3.10/site-packages/robot_gui_pkg-0.0.0-py3.10.egg-info\n'}
+[1.021302] (robot_gui_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.041367] (robot_gui_pkg) StdoutLine: {'line': b'Installing robot_gui script to /home/syafihidayat/Documents/robot_smoothing/install/robot_gui_pkg/lib/robot_gui_pkg\n'}
+[1.042228] (robot_gui_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/syafihidayat/Documents/robot_smoothing/build/robot_gui_pkg/install.log'\n"}
+[1.089883] (robot_gui_pkg) CommandEnded: {'returncode': 0}
+[1.096959] (robot_gui_pkg) JobEnded: {'identifier': 'robot_gui_pkg', 'rc': 0}
+[1.103459] (-) TimerEvent: {}
+[1.203989] (-) TimerEvent: {}
+[1.304451] (-) TimerEvent: {}
+[1.404943] (-) TimerEvent: {}
+[1.505381] (-) TimerEvent: {}
+[1.605837] (-) TimerEvent: {}
+[1.706308] (-) TimerEvent: {}
+[1.806746] (-) TimerEvent: {}
+[1.907242] (-) TimerEvent: {}
+[2.007846] (-) TimerEvent: {}
+[2.108341] (-) TimerEvent: {}
+[2.208766] (-) TimerEvent: {}
+[2.309116] (-) TimerEvent: {}
+[2.409494] (-) TimerEvent: {}
+[2.509866] (-) TimerEvent: {}
+[2.610355] (-) TimerEvent: {}
+[2.710805] (-) TimerEvent: {}
+[2.811299] (-) TimerEvent: {}
+[2.911828] (-) TimerEvent: {}
+[3.012582] (-) TimerEvent: {}
+[3.113028] (-) TimerEvent: {}
+[3.213493] (-) TimerEvent: {}
+[3.313904] (-) TimerEvent: {}
+[3.414337] (-) TimerEvent: {}
+[3.514776] (-) TimerEvent: {}
+[3.615223] (-) TimerEvent: {}
+[3.715687] (-) TimerEvent: {}
+[3.816135] (-) TimerEvent: {}
+[3.916618] (-) TimerEvent: {}
+[4.017114] (-) TimerEvent: {}
+[4.117596] (-) TimerEvent: {}
+[4.218013] (-) TimerEvent: {}
+[4.318483] (-) TimerEvent: {}
+[4.418948] (-) TimerEvent: {}
+[4.519715] (-) TimerEvent: {}
+[4.620396] (-) TimerEvent: {}
+[4.721117] (-) TimerEvent: {}
+[4.821579] (-) TimerEvent: {}
+[4.922395] (-) TimerEvent: {}
+[5.022851] (-) TimerEvent: {}
+[5.123666] (-) TimerEvent: {}
+[5.224085] (-) TimerEvent: {}
+[5.324487] (-) TimerEvent: {}
+[5.425306] (-) TimerEvent: {}
+[5.525746] (-) TimerEvent: {}
+[5.626603] (-) TimerEvent: {}
+[5.727068] (-) TimerEvent: {}
+[5.827535] (-) TimerEvent: {}
+[5.927974] (-) TimerEvent: {}
+[6.028451] (-) TimerEvent: {}
+[6.128915] (-) TimerEvent: {}
+[6.229702] (-) TimerEvent: {}
+[6.330158] (-) TimerEvent: {}
+[6.438749] (-) TimerEvent: {}
+[6.600875] (-) TimerEvent: {}
+[7.955974] (-) TimerEvent: {}
+[8.886557] (-) TimerEvent: {}
+[9.232750] (-) TimerEvent: {}
+[9.426820] (-) TimerEvent: {}
+[9.612379] (-) TimerEvent: {}
+[9.761037] (-) TimerEvent: {}
+[9.913955] (-) TimerEvent: {}
+[10.081005] (-) TimerEvent: {}
+[10.233818] (-) TimerEvent: {}
+[10.395863] (-) TimerEvent: {}
+[10.556349] (-) TimerEvent: {}
+[10.710210] (-) TimerEvent: {}
+[10.877591] (-) TimerEvent: {}
+[11.330936] (-) TimerEvent: {}
+[11.916504] (-) TimerEvent: {}
+[12.098300] (-) TimerEvent: {}
+[12.296285] (-) TimerEvent: {}
+[12.525032] (-) TimerEvent: {}
+[13.066236] (-) TimerEvent: {}
+[13.293865] (-) TimerEvent: {}
+[13.461366] (-) TimerEvent: {}
+[13.724841] (-) TimerEvent: {}
+[14.146106] (-) TimerEvent: {}
+[14.794009] (-) TimerEvent: {}
+[15.729609] (-) TimerEvent: {}
+[15.892807] (-) TimerEvent: {}
+[16.023886] (-) TimerEvent: {}
+[16.124397] (-) TimerEvent: {}
+[16.236290] (-) TimerEvent: {}
+[16.380284] (-) TimerEvent: {}
+[16.532882] (-) TimerEvent: {}
+[16.719786] (-) TimerEvent: {}
+[16.981396] (-) TimerEvent: {}
+[17.277210] (-) TimerEvent: {}
+[18.104450] (-) TimerEvent: {}
+[18.556091] (-) TimerEvent: {}
+[18.757159] (-) TimerEvent: {}
+[18.947539] (-) TimerEvent: {}
+[19.145959] (-) TimerEvent: {}
+[19.344823] (-) TimerEvent: {}
+[19.542352] (-) TimerEvent: {}
+[19.699287] (-) TimerEvent: {}
+[19.850035] (-) TimerEvent: {}
+[20.001646] (-) TimerEvent: {}
+[20.199209] (-) TimerEvent: {}
+[20.364950] (-) TimerEvent: {}
+[20.550100] (-) TimerEvent: {}
+[20.702881] (-) TimerEvent: {}
+[20.863310] (-) TimerEvent: {}
+[21.099940] (-) TimerEvent: {}
+[21.286508] (-) TimerEvent: {}
+[21.467256] (-) TimerEvent: {}
+[21.634194] (-) TimerEvent: {}
+[21.804282] (-) TimerEvent: {}
+[21.994461] (-) TimerEvent: {}
+[22.202439] (-) TimerEvent: {}
+[22.383541] (-) TimerEvent: {}
+[22.551984] (-) TimerEvent: {}
+[22.727329] (-) TimerEvent: {}
+[23.047124] (-) TimerEvent: {}
+[23.222615] (-) TimerEvent: {}
+[23.394731] (-) TimerEvent: {}
+[23.595120] (-) TimerEvent: {}
+[23.742343] (-) TimerEvent: {}
+[23.918041] (-) TimerEvent: {}
+[24.106587] (-) TimerEvent: {}
+[24.267361] (-) TimerEvent: {}
+[24.450597] (-) TimerEvent: {}
+[24.624387] (-) TimerEvent: {}
+[24.786459] (-) TimerEvent: {}
+[24.960419] (-) TimerEvent: {}
+[25.134680] (-) TimerEvent: {}
+[25.299318] (-) TimerEvent: {}
+[25.469152] (-) TimerEvent: {}
+[25.631621] (-) TimerEvent: {}
+[25.778983] (-) TimerEvent: {}
+[25.979917] (-) TimerEvent: {}
+[26.146838] (-) TimerEvent: {}
+[26.299804] (-) TimerEvent: {}
+[26.434382] (-) TimerEvent: {}
+[26.613276] (-) TimerEvent: {}
+[26.754991] (-) TimerEvent: {}
+[26.878718] (-) TimerEvent: {}
+[27.012753] (-) TimerEvent: {}
+[27.151516] (-) TimerEvent: {}
+[27.316513] (-) TimerEvent: {}
+[27.463763] (-) TimerEvent: {}
+[27.630016] (-) TimerEvent: {}
+[27.771117] (-) TimerEvent: {}
+[27.905568] (-) TimerEvent: {}
+[28.072679] (-) TimerEvent: {}
+[28.229059] (-) TimerEvent: {}
+[28.387066] (-) TimerEvent: {}
+[28.557041] (-) TimerEvent: {}
+[28.737683] (-) TimerEvent: {}
+[28.886440] (-) TimerEvent: {}
+[29.065811] (-) TimerEvent: {}
+[29.251467] (-) TimerEvent: {}
+[29.426016] (-) TimerEvent: {}
+[29.603135] (-) TimerEvent: {}
+[29.783425] (-) TimerEvent: {}
+[29.949135] (-) TimerEvent: {}
+[30.122070] (-) TimerEvent: {}
+[30.363344] (-) TimerEvent: {}
+[30.858930] (-) TimerEvent: {}
+[31.063410] (-) TimerEvent: {}
+[31.686857] (-) TimerEvent: {}
+[31.911652] (-) TimerEvent: {}
+[32.085819] (-) TimerEvent: {}
+[32.276855] (-) TimerEvent: {}
+[32.517411] (-) TimerEvent: {}
+[32.763334] (-) TimerEvent: {}
+[32.928969] (-) TimerEvent: {}
+[33.088339] (-) TimerEvent: {}
+[33.264889] (-) TimerEvent: {}
+[33.429078] (-) TimerEvent: {}
+[33.585982] (-) TimerEvent: {}
+[33.740315] (-) TimerEvent: {}
+[33.905119] (-) TimerEvent: {}
+[34.065352] (-) TimerEvent: {}
+[34.241087] (-) TimerEvent: {}
+[34.402281] (-) TimerEvent: {}
+[34.578713] (-) TimerEvent: {}
+[34.752201] (-) TimerEvent: {}
+[34.923512] (-) TimerEvent: {}
+[35.089671] (-) TimerEvent: {}
+[35.286712] (-) TimerEvent: {}
+[35.423260] (-) TimerEvent: {}
+[35.549820] (-) TimerEvent: {}
+[35.700038] (-) TimerEvent: {}
+[35.854817] (-) TimerEvent: {}
+[36.033985] (-) TimerEvent: {}
+[36.254341] (-) TimerEvent: {}
+[36.459764] (-) TimerEvent: {}
+[36.670370] (-) TimerEvent: {}
+[36.843027] (-) TimerEvent: {}
+[37.031792] (-) TimerEvent: {}
+[37.247175] (-) TimerEvent: {}
+[37.425728] (-) TimerEvent: {}
+[37.586033] (-) TimerEvent: {}
+[37.755950] (-) TimerEvent: {}
+[37.913909] (-) TimerEvent: {}
+[38.077883] (-) TimerEvent: {}
+[38.247934] (-) TimerEvent: {}
+[38.834892] (-) TimerEvent: {}
+[39.689634] (-) TimerEvent: {}
+[40.416126] (-) TimerEvent: {}
+[40.861909] (-) TimerEvent: {}
+[41.072814] (-) TimerEvent: {}
+[41.310829] (-) TimerEvent: {}
+[41.705263] (-) TimerEvent: {}
+[42.245316] (-) TimerEvent: {}
+[42.528991] (-) TimerEvent: {}
+[42.687262] (-) TimerEvent: {}
+[42.852642] (-) TimerEvent: {}
+[43.073077] (-) TimerEvent: {}
+[43.567447] (-) TimerEvent: {}
+[44.059802] (-) TimerEvent: {}
+[44.391930] (-) TimerEvent: {}
+[44.618312] (-) TimerEvent: {}
+[44.908759] (-) TimerEvent: {}
+[45.101534] (-) TimerEvent: {}
+[45.290164] (-) TimerEvent: {}
+[45.482563] (-) TimerEvent: {}
+[45.646056] (-) TimerEvent: {}
+[45.865071] (-) TimerEvent: {}
+[46.037321] (-) TimerEvent: {}
+[46.227474] (-) TimerEvent: {}
+[46.452091] (-) TimerEvent: {}
+[46.623165] (-) TimerEvent: {}
+[46.799143] (-) TimerEvent: {}
+[46.947329] (-) TimerEvent: {}
+[47.133107] (-) TimerEvent: {}
+[47.329550] (-) TimerEvent: {}
+[47.532759] (-) TimerEvent: {}
+[47.718344] (-) TimerEvent: {}
+[47.931182] (-) TimerEvent: {}
+[48.115882] (-) TimerEvent: {}
+[48.348566] (-) TimerEvent: {}
+[48.530704] (-) TimerEvent: {}
+[48.775742] (-) TimerEvent: {}
+[48.933867] (-) TimerEvent: {}
+[49.143541] (-) TimerEvent: {}
+[49.314694] (-) TimerEvent: {}
+[49.566655] (-) TimerEvent: {}
+[49.788813] (-) TimerEvent: {}
+[50.133336] (-) TimerEvent: {}
+[50.329516] (-) TimerEvent: {}
+[50.552988] (-) TimerEvent: {}
+[50.745649] (-) TimerEvent: {}
+[51.044841] (-) TimerEvent: {}
+[51.266529] (-) TimerEvent: {}
+[51.569136] (-) TimerEvent: {}
+[51.761511] (-) TimerEvent: {}
+[51.986307] (-) TimerEvent: {}
+[52.260054] (-) TimerEvent: {}
+[52.433512] (-) TimerEvent: {}
+[52.608438] (-) TimerEvent: {}
+[52.821603] (-) TimerEvent: {}
+[53.067968] (-) TimerEvent: {}
+[53.292728] (-) TimerEvent: {}
+[53.481544] (-) TimerEvent: {}
+[53.729624] (-) TimerEvent: {}
+[54.022509] (-) TimerEvent: {}
+[54.297097] (-) TimerEvent: {}
+[54.502806] (-) TimerEvent: {}
+[54.668016] (-) TimerEvent: {}
+[54.898822] (-) TimerEvent: {}
+[55.139472] (-) TimerEvent: {}
+[55.296135] (-) TimerEvent: {}
+[55.686845] (-) TimerEvent: {}
+[55.890585] (-) TimerEvent: {}
+[56.090759] (-) TimerEvent: {}
+[56.299756] (-) TimerEvent: {}
+[56.467916] (-) TimerEvent: {}
+[56.708990] (-) TimerEvent: {}
+[56.898715] (-) TimerEvent: {}
+[57.467942] (-) TimerEvent: {}
+[58.091901] (-) TimerEvent: {}
+[58.902205] (-) TimerEvent: {}
+[59.569046] (-) TimerEvent: {}
+[60.811243] (-) TimerEvent: {}
+[61.988447] (-) TimerEvent: {}
+[63.146501] (-) TimerEvent: {}
+[65.247020] (-) TimerEvent: {}
+[66.790058] (-) TimerEvent: {}
+[69.556036] (-) TimerEvent: {}
+[71.283182] (-) TimerEvent: {}
+[73.057798] (-) TimerEvent: {}
+[75.144348] (-) TimerEvent: {}
+[77.799592] (-) TimerEvent: {}
+[81.357365] (-) TimerEvent: {}
+[84.291624] (-) TimerEvent: {}
+[86.243186] (-) TimerEvent: {}
+[87.927240] (-) TimerEvent: {}
+[90.251776] (-) TimerEvent: {}
+[95.484972] (-) TimerEvent: {}
+[100.412757] (-) TimerEvent: {}
+[102.837213] (-) TimerEvent: {}
+[104.447877] (-) TimerEvent: {}
+[105.642565] (-) TimerEvent: {}
+[108.246982] (-) TimerEvent: {}
+[111.276073] (-) TimerEvent: {}
+[113.757630] (-) TimerEvent: {}
+[115.596152] (-) TimerEvent: {}
+[119.206622] (-) TimerEvent: {}
+[121.132402] (-) TimerEvent: {}
+[121.804268] (-) TimerEvent: {}
+[122.583137] (-) TimerEvent: {}
+[122.789673] (-) TimerEvent: {}
+[123.632032] (-) TimerEvent: {}
+[124.764792] (-) TimerEvent: {}
+[126.005083] (-) TimerEvent: {}
+[126.761814] (-) TimerEvent: {}
+[126.994939] (-) TimerEvent: {}
+[128.206583] (-) TimerEvent: {}
+[129.040375] (-) TimerEvent: {}
+[130.165390] (-) TimerEvent: {}
+[130.891803] (-) TimerEvent: {}
+[131.874264] (-) TimerEvent: {}
+[133.906005] (-) TimerEvent: {}
+[134.825657] (-) TimerEvent: {}
+[135.379607] (-) TimerEvent: {}
+[135.909465] (-) TimerEvent: {}
+[136.149548] (-) TimerEvent: {}
+[136.449810] (-) TimerEvent: {}
+[136.698229] (-) TimerEvent: {}
+[136.903103] (-) TimerEvent: {}
+[137.086560] (-) TimerEvent: {}
+[137.718603] (-) TimerEvent: {}
+[138.153372] (-) TimerEvent: {}
+[138.363263] (-) TimerEvent: {}
+[138.667315] (-) TimerEvent: {}
+[139.000127] (-) TimerEvent: {}
+[139.531154] (-) TimerEvent: {}
+[139.792033] (-) TimerEvent: {}
+[139.975795] (-) TimerEvent: {}
+[140.196559] (-) TimerEvent: {}
+[140.355950] (-) TimerEvent: {}
+[140.492684] (-) TimerEvent: {}
+[140.641750] (-) TimerEvent: {}
+[140.853602] (-) TimerEvent: {}
+[141.063492] (-) TimerEvent: {}
+[141.280964] (-) TimerEvent: {}
+[141.482290] (-) TimerEvent: {}
+[141.677634] (-) TimerEvent: {}
+[141.835269] (-) TimerEvent: {}
+[142.033592] (-) TimerEvent: {}
+[142.273799] (-) TimerEvent: {}
+[142.457900] (-) TimerEvent: {}
+[142.716352] (-) TimerEvent: {}
+[142.879256] (-) TimerEvent: {}
+[143.115147] (-) TimerEvent: {}
+[143.404163] (-) TimerEvent: {}
+[143.603036] (-) TimerEvent: {}
+[143.787798] (-) TimerEvent: {}
+[143.975520] (-) TimerEvent: {}
+[144.189328] (-) TimerEvent: {}
+[144.395954] (-) TimerEvent: {}
+[144.627667] (-) TimerEvent: {}
+[144.903950] (-) TimerEvent: {}
+[145.130273] (-) TimerEvent: {}
+[145.327300] (-) TimerEvent: {}
+[145.509296] (-) TimerEvent: {}
+[145.688500] (-) TimerEvent: {}
+[145.907265] (-) TimerEvent: {}
+[146.124028] (-) TimerEvent: {}
+[146.420971] (-) TimerEvent: {}
+[146.608855] (-) TimerEvent: {}
+[146.781440] (-) TimerEvent: {}
+[146.966184] (-) TimerEvent: {}
+[147.195694] (-) TimerEvent: {}
+[147.471350] (-) TimerEvent: {}
+[147.668753] (-) TimerEvent: {}
+[147.958528] (-) TimerEvent: {}
+[148.439864] (-) TimerEvent: {}
+[148.835773] (-) TimerEvent: {}
+[149.022381] (-) TimerEvent: {}
+[149.177630] (-) TimerEvent: {}
+[149.375737] (-) TimerEvent: {}
+[149.678922] (-) TimerEvent: {}
+[149.879173] (-) TimerEvent: {}
+[150.077566] (-) TimerEvent: {}
+[150.245123] (-) TimerEvent: {}
+[150.448197] (-) TimerEvent: {}
+[150.652576] (-) TimerEvent: {}
+[150.851299] (-) TimerEvent: {}
+[151.061920] (-) TimerEvent: {}
+[151.305204] (-) TimerEvent: {}
+[151.455241] (-) TimerEvent: {}
+[151.640489] (-) TimerEvent: {}
+[151.828810] (-) TimerEvent: {}
+[152.022239] (-) TimerEvent: {}
+[152.226515] (-) TimerEvent: {}
+[152.500242] (-) TimerEvent: {}
+[152.682293] (-) TimerEvent: {}
+[152.860447] (-) TimerEvent: {}
+[153.067980] (-) TimerEvent: {}
+[153.324259] (-) TimerEvent: {}
+[153.515056] (-) TimerEvent: {}
+[153.712655] (-) TimerEvent: {}
+[153.892939] (-) TimerEvent: {}
+[154.074494] (-) TimerEvent: {}
+[154.257516] (-) TimerEvent: {}
+[154.422720] (-) TimerEvent: {}
+[154.572919] (-) TimerEvent: {}
+[154.755500] (-) TimerEvent: {}
+[154.931588] (-) TimerEvent: {}
+[155.115767] (-) TimerEvent: {}
+[155.295279] (-) TimerEvent: {}
+[155.461678] (-) TimerEvent: {}
+[155.603324] (-) TimerEvent: {}
+[155.766908] (-) TimerEvent: {}
+[155.928338] (-) TimerEvent: {}
+[156.126102] (-) TimerEvent: {}
+[156.296401] (-) TimerEvent: {}
+[156.464371] (-) TimerEvent: {}
+[156.619066] (-) TimerEvent: {}
+[156.790550] (-) TimerEvent: {}
+[156.952821] (-) TimerEvent: {}
+[157.134092] (-) TimerEvent: {}
+[157.303281] (-) TimerEvent: {}
+[157.459462] (-) TimerEvent: {}
+[157.591625] (-) TimerEvent: {}
+[157.747373] (-) TimerEvent: {}
+[157.909825] (-) TimerEvent: {}
+[158.073279] (-) TimerEvent: {}
+[158.243328] (-) TimerEvent: {}
+[158.396682] (-) TimerEvent: {}
+[158.565138] (-) TimerEvent: {}
+[158.713372] (-) TimerEvent: {}
+[158.862573] (-) TimerEvent: {}
+[159.003038] (-) TimerEvent: {}
+[159.153763] (-) TimerEvent: {}
+[159.307305] (-) TimerEvent: {}
+[159.434476] (-) TimerEvent: {}
+[159.535366] (-) TimerEvent: {}
+[159.643350] (-) TimerEvent: {}
+[159.790778] (-) TimerEvent: {}
+[159.942073] (-) TimerEvent: {}
+[160.133319] (-) TimerEvent: {}
+[160.726802] (-) TimerEvent: {}
+[161.621857] (-) TimerEvent: {}
+[161.889525] (-) TimerEvent: {}
+[162.499075] (-) TimerEvent: {}
+[163.359824] (-) TimerEvent: {}
+[163.814603] (-) TimerEvent: {}
+[164.060402] (-) TimerEvent: {}
+[164.574912] (-) TimerEvent: {}
+[165.123188] (-) TimerEvent: {}
+[165.523195] (-) TimerEvent: {}
+[165.974457] (-) TimerEvent: {}
+[166.161433] (-) TimerEvent: {}
+[166.822566] (-) TimerEvent: {}
+[167.264889] (-) TimerEvent: {}
+[167.880561] (-) TimerEvent: {}
+[168.127004] (-) TimerEvent: {}
+[168.501602] (-) TimerEvent: {}
+[168.753565] (-) TimerEvent: {}
+[169.315418] (-) TimerEvent: {}
+[169.518265] (-) TimerEvent: {}
+[169.920345] (-) TimerEvent: {}
+[170.380953] (-) TimerEvent: {}
+[170.836743] (-) TimerEvent: {}
+[171.301392] (-) TimerEvent: {}
+[171.477007] (-) TimerEvent: {}
+[171.819584] (-) TimerEvent: {}
+[172.230857] (-) TimerEvent: {}
+[172.408310] (-) TimerEvent: {}
+[172.657017] (-) TimerEvent: {}
+[172.834933] (-) TimerEvent: {}
+[173.084233] (-) TimerEvent: {}
+[173.668202] (-) TimerEvent: {}
+[174.911203] (-) TimerEvent: {}
+[175.839188] (-) TimerEvent: {}
+[176.950819] (-) TimerEvent: {}
+[178.344779] (-) TimerEvent: {}
+[180.194663] (-) TimerEvent: {}
+[182.794850] (-) TimerEvent: {}
+[186.147264] (-) TimerEvent: {}
+[187.746127] (purpuresuit_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Interrupt\n'}
+[187.760301] (-) TimerEvent: {}
+[187.760880] (robot_waypoint_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/robot_waypoint.dir/build.make:76: CMakeFiles/robot_waypoint.dir/src/robot_waypoint.cpp.o] Interrupt\n'}
+[187.769908] (purpuresuit_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Interrupt\n'}
+[187.770121] (robot_waypoint_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_waypoint.dir/all] Interrupt\n'}
+[187.770313] (purpuresuit_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[187.770410] (robot_waypoint_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[187.770500] (purpuresuit_pkg) CommandEnded: {'returncode': -2}
+[187.856569] (purpuresuit_pkg) JobEnded: {'identifier': 'purpuresuit_pkg', 'rc': 'SIGINT'}
+[187.859126] (robot_waypoint_pkg) JobEnded: {'identifier': 'robot_waypoint_pkg', 'rc': 'SIGINT'}
+[187.860371] (-) TimerEvent: {}
+[187.867712] (-) EventReactorShutdown: {}

@@ -46,13 +46,48 @@ public:
 
         path_finished_pub = this->create_publisher<std_msgs::msg::Bool>("path_finished", 10);
 
-        this->declare_parameter<double>("look_ahead_distance", 0.4);
-        this->declare_parameter<double>("stop_radius", 0.15);
-        this->declare_parameter<double>("goal_tolerance", 0.03);
-        this->declare_parameter<double>("path_sampling_step", 0.03);
-        this->declare_parameter<bool>("use_smoothing", true);
+        this->declare_parameter<double>("look_ahead_distance", 0.4); // meter
+        this->declare_parameter<double>("stop_radius", 0.15); // meter
+        this->declare_parameter<double>("goal_tolerance", 0.03); // meter
+        this->declare_parameter<double>("path_sampling_step", 0.03); // meter
+        this->declare_parameter<bool>("use_smoothing", true); 
         this->declare_parameter<bool>("dynamic_lookahead", true);
-        this->declare_parameter<double>("publish_rate_hz", 50.0);
+        this->declare_parameter<double>("publish_rate_hz", 50.0); // hz
+
+        this->declare_parameter<bool>("adaptive_lookahead", true);
+        this->declare_parameter<double>("lookahead_speed_gain", 0.3);
+        this->declare_parameter<double>("look_ahead_max", 1.0);
+
+        //_____________________________________________________NOTE_________________________________________________//
+            //look_ahead_distance: Jarak "pandang ke depan" Pure Pursuit — seberapa jauh titik target yang dikejar dari posisi robot saat ini di sepanjang path. 
+            // - Kecil (misal 0.15)	Robot lebih "nempel" ke kurva, akurat, tapi bisa gemetar/kurang smooth di tikungan tajam
+            // - Besar (misal 0.8)	Gerakan lebih smooth & cepat, tapi robot "motong" tikungan (cross-track error lebih besar)
+
+            //stop_radius: Jarak dari titik akhir path di mana robot beralih mode — dari "Pure Pursuit normal" (kejar lookahead point) ke "Final Approach" (kejar titik akhir langsung).
+            // - Kecil (misal 0.05)	Mode "presisi" aktif belakangan (baru mepet ke tujuan), robot lebih lama di mode Pure Pursuit biasa
+            // - Besar (misal 0.3)	Mode presisi aktif dari jauh, robot melambat/lebih hati-hati lebih awal sebelum sampai
+
+            //goal_tolerance: Jarak minimum untuk menganggap robot "benar-benar sampai" dan menghentikan seluruh proses Pure Pursuit.
+            // - Kecil (misal 0.01)	Robot harus sangat presisi baru dianggap "sampai" — makin susah/lama tercapai kalau ada noise odometry
+            // - Besar (misal 0.1)	Robot dianggap "sampai" walau masih agak jauh dari titik sebenarnya — kurang presisi tapi lebih cepat "selesai"
+
+            //path_sampling_step: Kerapatan titik-titik hasil sampling spline Makin kecil nilainya, makin rapat titik yang dihasilkan sepanjang kurva 
+            // (path lebih halus & Pure Pursuit lebih akurat cari lookahead point), tapi makin banyak titik yang harus disimpan & dicek tiap loop (sedikit lebih berat komputasi).
+            
+            //use_smoothing: Toggle Catmull-Rom spline on/off. 
+            // - true = path di-generate lewat kurva Catmull-Rom (mulus). 
+            // - false = path cuma garis lurus antar waypoint
+
+            //dynamic_lookahead: Toggle apakah look_ahead_distance mengecil otomatis saat mendekati titik akhir path.
+            // - true: begitu robot dekat titik akhir (jaraknya < 2x lookahead distance), lookahead mengecil bertahap — mencegah robot "overshoot"/lewat dari titik akhir karena masih ngejar titik yang jauh di depan.
+            // - false: lookahead tetap konstan sepanjang path, termasuk pas sudah dekat titik akhir — bisa bikin robot susah berhenti presisi (karena tetap ngejar titik yang "melewati" tujuan sebenarnya).
+
+            // publish_rate_hz: Seberapa sering node ini menghitung ulang & publish titik target baru ke /pose (lewat timer_ di constructor).
+            // - Rendah (misal 10Hz)	Update target lebih jarang, gerakan robot bisa terasa "patah-patah" karena target-nya update lambat dibanding kecepatan robot
+            // - Tinggi (misal 100Hz)	Update lebih sering, gerakan lebih smooth, tapi lebih banyak beban CPU & traffic topic
+
+
+
 
         this->get_parameter("look_ahead_distance", L_d_base);
         this->get_parameter("stop_radius", stop_radius);
@@ -60,6 +95,10 @@ public:
         this->get_parameter("path_sampling_step", path_step);
         this->get_parameter("use_smoothing", use_smoothing);
         this->get_parameter("dynamic_lookahead", dynamic_lookahead);
+
+        this->get_parameter("adaptive_lookahead", adaptive_lookahead);
+        this->get_parameter("lookahead_speed_gain", lookahead_speed_gain);
+        this->get_parameter("look_ahead_max", look_ahead_max);
 
         double rate_hz;
         this->get_parameter("publish_rate_hz", rate_hz);
@@ -89,6 +128,7 @@ private:
 
     double X_ = 0.0;
     double Y_ = 0.0;
+    double current_speed = 0.0;
 
     double L_d_base = 0.4;
     double stop_radius = 0.15;
@@ -96,6 +136,10 @@ private:
     double path_step = 0.03;
     bool use_smoothing = true;
     bool dynamic_lookahead = true;
+
+    bool adaptive_lookahead = true;
+    double lookahead_speed_gain = 0.3;
+    double look_ahead_max = 1.0;
 
     //....................................................Catmull-Rom Spline Smoothing Function....................................................
 
@@ -225,6 +269,12 @@ private:
     {
         X_ = msg->pose.pose.position.x;
         Y_ = msg->pose.pose.position.y;
+        
+        double vx = msg->twist.twist.linear.x;
+        double vy = msg->twist.twist.linear.y;
+        current_speed = std::hypot(vx,vy);
+        
+        
         odom_received = true;
     }
 
@@ -243,9 +293,18 @@ private:
             follow_idx = closest;
 
         double look_ahead = L_d_base;
+
+        if(adaptive_lookahead)
+        {
+            look_ahead = L_d_base + lookahead_speed_gain * current_speed;
+            look_ahead = std::min(look_ahead, look_ahead_max);
+        }
+
+
         if (dynamic_lookahead && dist_to_final < look_ahead * 2.0)
         {
-            look_ahead = std::max(0.05, L_d_base * (dist_to_final / (look_ahead * 2.0)));
+            // look_ahead = std::max(0.05, L_d_base * (dist_to_final / (look_ahead * 2.0)));
+            look_ahead = std::max(0.05, look_ahead * (dist_to_final / (look_ahead * 2.0)));
         }
 
         double target_x, target_y;

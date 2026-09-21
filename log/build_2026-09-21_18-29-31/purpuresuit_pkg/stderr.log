@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/purpuresuit.dir/build.make:76: CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/purpuresuit.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
