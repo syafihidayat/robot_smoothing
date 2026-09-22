@@ -721,8 +721,31 @@ CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o: /home/syafihidayat/Documents/r
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp
 
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
 
@@ -951,6 +974,8 @@ CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o: /home/syafihidayat/Documents/r
 /usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
@@ -1579,6 +1604,8 @@ CMakeFiles/purpuresuit.dir/src/purpuresuit.cpp.o: /home/syafihidayat/Documents/r
 /usr/include/c++/11/streambuf:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 

@@ -21,6 +21,7 @@ Copyright (c) 2025 RRST-NHK-Project
 #include <std_msgs/msg/float32_multi_array.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <geometry_msgs/msg/point.hpp>
+#include <std_msgs/msg/float32.hpp>
 
 using namespace std::chrono_literals;
 
@@ -46,6 +47,8 @@ public:
 
         path_finished_pub = this->create_publisher<std_msgs::msg::Bool>("path_finished", 10);
 
+        speed_pub = this->create_publisher<std_msgs::msg::Float32>("waypoint_speed", 10);
+
         this->declare_parameter<double>("look_ahead_distance", 0.4); // meter
         this->declare_parameter<double>("stop_radius", 0.15); // meter
         this->declare_parameter<double>("goal_tolerance", 0.03); // meter
@@ -54,9 +57,17 @@ public:
         this->declare_parameter<bool>("dynamic_lookahead", true);
         this->declare_parameter<double>("publish_rate_hz", 50.0); // hz
 
-        this->declare_parameter<bool>("adaptive_lookahead", true);
+        this->declare_parameter<bool>("adaptive_lookahead", false);
         this->declare_parameter<double>("lookahead_speed_gain", 0.3);
         this->declare_parameter<double>("look_ahead_max", 1.0);
+
+        this->declare_parameter<bool>("curvature_speed_regulation", true);
+        this->declare_parameter<double>("max_speed", 1.0);
+        this->declare_parameter<double>("min_speed_corner", 0.3);
+        this->declare_parameter<double>("curvature_lookahead_pts", 8.0);
+        this->declare_parameter<double>("curvature_gain", 1.0);
+
+
 
         //_____________________________________________________NOTE_________________________________________________//
             //look_ahead_distance: Jarak "pandang ke depan" Pure Pursuit — seberapa jauh titik target yang dikejar dari posisi robot saat ini di sepanjang path. 
@@ -87,6 +98,13 @@ public:
             // - Tinggi (misal 100Hz)	Update lebih sering, gerakan lebih smooth, tapi lebih banyak beban CPU & traffic topic
 
 
+            // curvature_speed_regulation: on/off fitur ini
+            // max_speed: kecepatan target di jalur lurus (curvature ~0)
+            // min_speed_corner: batas bawah kecepatan, robot tidak akan lebih pelan dari ini walau kurva sangat tajam
+            // curvature_lookahead_pts: jendela pengecekan curvature (dalam jumlah titik path, bukan meter)
+            // curvature_gain: makin besar, makin cepat/agresif penurunan kecepatan saat curvature naik
+
+
 
 
         this->get_parameter("look_ahead_distance", L_d_base);
@@ -99,6 +117,12 @@ public:
         this->get_parameter("adaptive_lookahead", adaptive_lookahead);
         this->get_parameter("lookahead_speed_gain", lookahead_speed_gain);
         this->get_parameter("look_ahead_max", look_ahead_max);
+
+        this->get_parameter("curvature_speed_regulation", curvature_speed_regulation);
+        this->get_parameter("max_speed", max_speed);
+        this->get_parameter("min_speed_corner", min_speed_corner);
+        this->get_parameter("curvature_lookahead_pts", curvature_lookahead_pts);
+        this->get_parameter("curvature_gain", curvature_gain);
 
         double rate_hz;
         this->get_parameter("publish_rate_hz", rate_hz);
@@ -116,6 +140,7 @@ private:
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub;
     rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr target_pub;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr path_finished_pub;
+    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr speed_pub;
     rclcpp::TimerBase::SharedPtr timer_;
     
 
@@ -137,9 +162,15 @@ private:
     bool use_smoothing = true;
     bool dynamic_lookahead = true;
 
-    bool adaptive_lookahead = true;
+    bool adaptive_lookahead = false;
     double lookahead_speed_gain = 0.3;
     double look_ahead_max = 1.0;
+
+    bool curvature_speed_regulation = true;
+    double max_speed = 1.0;
+    double min_speed_corner = 0.3;
+    double curvature_lookahead_pts = 8.0;
+    double curvature_gain = 1.0;
 
     //....................................................Catmull-Rom Spline Smoothing Function....................................................
 
@@ -237,6 +268,44 @@ private:
         return best;
     }
 
+    double estimateCurvatureAt(size_t idx)
+    {
+        int window = std::max(1, static_cast<int>(curvature_lookahead_pts));
+        long i_prev = static_cast<long>(idx) - window;
+        long i_next = static_cast<long>(idx) + window;
+
+        if (i_prev < 0 || i_next >= static_cast<long>(path.size()))
+            return 0.0;
+
+        const Point2D &a = path[static_cast<size_t>(i_prev)];
+        const Point2D &b = path[idx];
+        const Point2D &c = path[static_cast<size_t>(i_next)];
+
+        double ab = std::hypot(b.x - a.x, b.y - a.y);
+        double bc = std::hypot(c.x - b.x, c.y - b.y);
+        double ac = std::hypot(c.x - a.x, c.y - a.y);
+
+        if (ab < 1e-6 || bc < 1e-6 || ac < 1e-6)
+            return 0.0;
+
+        double area2 = std::abs((b.x - a.x) * (c.y - a.y) - (c.x - a.x) * (b.y - a.y));
+
+        double curvature = (4.0 * (area2 / 2.0)) / (ab * bc* ac);
+        return curvature;
+    }
+
+    double lookAheadMaxCurvature(size_t start_idx, int check_span)
+    {
+        double max_c = 0.0;
+        size_t end_idx = std::min(path.size(), start_idx + static_cast<size_t>(check_span));
+        for(size_t i = start_idx; i < end_idx; i++)
+        {
+            double c = estimateCurvatureAt(i);
+            if(c > max_c)max_c = c;
+        }
+        return max_c;
+    }
+
     void pose_callback(const std_msgs::msg::Float32MultiArray::SharedPtr msg)
     {
         if (msg->data.size() < 2 || msg->data.size() % 2 != 0)
@@ -331,15 +400,34 @@ private:
             target_y = path[la_idx].y;
         }
 
+        // ---- Curvature-based speed regulation ----
+        double regulated_speed = max_speed;
+        if(curvature_speed_regulation && !path.empty())
+        {
+            int span = std::max(4, static_cast<int>(curvature_lookahead_pts) * 3);
+            double max_curv = lookAheadMaxCurvature(follow_idx, span);
+
+            regulated_speed = max_speed / (1.0 + curvature_gain * max_curv);
+            regulated_speed = std::max(min_speed_corner, std::min(regulated_speed, max_speed));
+
+            std_msgs::msg::Float32 speed_msg;
+            speed_msg.data = static_cast<float>(regulated_speed);
+            speed_pub->publish(speed_msg);
+        }
+
         geometry_msgs::msg::Point target_msg;
         target_msg.x = target_x;
         target_msg.y = target_y;
         target_msg.z = 0.0;
         target_pub->publish(target_msg);
 
+        // RCLCPP_INFO(get_logger(),
+        //             "pos(%.2f,%.2f) -> target(%.2f,%.2f) | L_d:%.2f | dist_final:%.2f",
+        //             X_, Y_, target_x, target_y, look_ahead, dist_to_final);
+
         RCLCPP_INFO(get_logger(),
-                    "pos(%.2f,%.2f) -> target(%.2f,%.2f) | L_d:%.2f | dist_final:%.2f",
-                    X_, Y_, target_x, target_y, look_ahead, dist_to_final);
+            "pos(%.2f,%.2f) -> target(%.2f,%.2f) | L_d:%.2f | dist_final:%.2f | speed_cmd:%.2f",
+            X_, Y_, target_x, target_y, look_ahead, dist_to_final, regulated_speed);
     }
 };
 

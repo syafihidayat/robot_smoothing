@@ -1,0 +1,25 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/robot_main.dir/src/robot_main.cpp.o[0m
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:[m[K In member function ‘[01m[Kvoid Movement::control_loop()[m[K’:
+[01m[K/home/syafihidayat/Documents/robot_smoothing/src/robot_main_pkg/src/robot_main.cpp:240:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcontrol_angle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  240 |         float [01;35m[Kcontrol_angle[m[K = omni_angular.control_base_rotation(theta, max_angular_vel);
+      |               [01;35m[K^~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable robot_main[0m
+[100%] Built target robot_main
+-- Install configuration: ""
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/robot_main_pkg/robot_main
+-- Set runtime path of "/home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/lib/robot_main_pkg/robot_main" to ""
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/package_run_dependencies/robot_main_pkg
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/parent_prefix_path/robot_main_pkg
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.sh
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/environment/path.dsv
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.bash
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.sh
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.zsh
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/local_setup.dsv
+-- Installing: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.dsv
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/ament_index/resource_index/packages/robot_main_pkg
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig.cmake
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/cmake/robot_main_pkgConfig-version.cmake
+-- Up-to-date: /home/syafihidayat/Documents/robot_smoothing/install/robot_main_pkg/share/robot_main_pkg/package.xml

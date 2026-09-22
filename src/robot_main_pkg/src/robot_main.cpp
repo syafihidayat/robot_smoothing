@@ -36,8 +36,11 @@ public:
     pose_sub = this->create_subscription<geometry_msgs::msg::Point>("/pose", 10,
     std::bind(&Movement::pose_callback, this, std::placeholders::_1));
 
+    speed_sub = this->create_subscription<std_msgs::msg::Float32>("/waypoint_speed", 10,
+    std::bind(&Movement::speed_callback, this, std::placeholders::_1));
 
-    timer_ = this->create_wall_timer(std::chrono::milliseconds(60), std::bind(&Movement::control_loop, this));
+
+    timer_ = this->create_wall_timer(std::chrono::milliseconds(20), std::bind(&Movement::control_loop, this));
 
     start_received = false;
     target_received = false;
@@ -69,6 +72,8 @@ public:
     this->get_parameter("desired_linear_vel", desired_linear_vel);
     this->get_parameter("max_angular_vel", max_angular_vel);
 
+    current_target_speed = desired_linear_vel;
+
     omni_distance.setBaseParam(kp, ki, kd);
     omni_angular.setHeadingParam(kpT, kiT, kdT);
 
@@ -84,6 +89,7 @@ private:
   };
 
   float desired_linear_vel, max_angular_vel;
+  float current_target_speed;
 
   int stage1_target_total = 1;
   int stage1_target_count = 0;
@@ -166,6 +172,11 @@ private:
 
   }
 
+  void speed_callback(const std_msgs::msg::Float32::SharedPtr msg)
+  {
+    current_target_speed = msg->data;
+  }
+
   void control_loop()
   {
     geometry_msgs::msg::Twist cmd;
@@ -224,7 +235,8 @@ private:
         double distance = std::sqrt(dx * dx + dy * dy);
         double angle = std::atan2(dy, dx);
 
-        float control_distance = omni_distance.control_base(distance, desired_linear_vel);
+        float control_distance = omni_distance.control_base(distance, current_target_speed);
+        // float control_distance = omni_distance.control_base(distance, desired_linear_vel);
         float control_angle = omni_angular.control_base_rotation(theta, max_angular_vel);
 
 
@@ -235,7 +247,8 @@ private:
           cmd.linear.y = control_distance * std::sin(angle);
           cmd.angular.z = 0 ;
 
-          RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "move robot");
+          // RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, "move robot");
+          RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000,"move robot | target_speed: %.2f", current_target_speed);
 
         }
         else
@@ -286,6 +299,7 @@ private:
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr reached_pub;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub;
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr pose_sub;
+  rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr speed_sub;
 
   nav_msgs::msg::Odometry odom_robot_msg;
 
